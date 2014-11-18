@@ -22,9 +22,15 @@ public class Fleet extends Ownable {
 		else
 			return 0;
 	}
-	/* tilføj en metode, at man får 1+ i fleetammount når man køber en fleet.
-	
-	*/
+	@Override
+	public void buyField(Player player) {
+		if (willing) {
+			owner = player;
+			isowned = true;
+			owner.addBalance(-price);
+			owner.addFleet();
+		}
+	}
 	
 	public int getRent_1() {
 		return rent_1;

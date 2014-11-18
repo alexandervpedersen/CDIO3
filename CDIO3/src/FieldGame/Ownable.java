@@ -16,11 +16,11 @@ public abstract class Ownable extends Field {
 	public int getPrice() {
 		return price;
 	}
-	protected void buyField(Player owner) {
+	protected void buyField(Player player) {
 		if (willing) {
-		this.owner = owner;
+		owner = player;
 		isowned = true;
-		this.owner.addBalance(-price);
+		owner.addBalance(-price);
 		}
 			
 	}
@@ -39,7 +39,11 @@ public abstract class Ownable extends Field {
 	}
 	
 	@Override
-	// setWilling skal laves inden denne metode
+	/* setWilling skal laves inden denne metode
+	 * 
+	 * der skal tjekkes med isOwned inden, - for at simulere spørgsmålet inden det faktisk bliver stilt
+	*/
+	
 	public void LandOnField(Player player) {
 		if (isowned == true) {
 			player.addBalance(-getRent());

@@ -20,12 +20,12 @@ public abstract class Ownable extends Field {
 		if (willing) {
 		this.owner = owner;
 		isowned = true;
-		// withdraw price
+		this.owner.withdrawBalance(price);
 		}
 			
 	}
 	public String getOwner() {
-		return //getname
+		return owner.getName();
 	}
 	
 	public void setWilling(boolean wantbuy) {
@@ -39,9 +39,12 @@ public abstract class Ownable extends Field {
 	}
 	
 	@Override
+	// setWilling skal laves inden denne metode
 	public void LandOnField(Player player) {
-		if (isowned == true)
-			// withdraw rent
+		if (isowned == true) {
+			player.withdrawBalance(getRent());
+			owner.depositBalance(getRent());
+		}
 		else {
 			buyField(player);
 			resetWilling();

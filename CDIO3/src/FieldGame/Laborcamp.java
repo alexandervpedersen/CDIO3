@@ -10,6 +10,9 @@ public class Laborcamp extends Ownable {
 	public int getRent() {
 		return baserent;
 	}
+	@Override
+	public void LandOnField() {
+	}
 	
 
 }

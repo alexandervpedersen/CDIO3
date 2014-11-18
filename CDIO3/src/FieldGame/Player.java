@@ -1,41 +1,69 @@
 package FieldGame;
 
-public class Player {
-	
+public class Player{
 	private String name;
 	private Account account;
+	private boolean isAlive = true;
+	private int currenttile = 1;
 	
-	public Player (String new_name, Account new_account) {
-		this.name = new_name;
-		this.account = new_account;
+	public Player(){
+		name = "";
+		account = new Account();
+		isAlive = true;
+		currenttile = 1;
 	}
-		
+	
+	public Player(String name){
+		this.name = name;
+		account = new Account();
+		isAlive = true;
+		currenttile = 1;
+	}
+
 	public String getName() {
 		return name;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public boolean isAlive() {
+		return isAlive;
+	}
+
+	public void setAlive(boolean isAlive) {
+		this.isAlive = isAlive;
+	}
+
+	public int getCurrenttile() {
+		return currenttile;
+	}
+
+	public void setCurrenttile(int currenttile) {
+		this.currenttile = currenttile;
+	}
 	
-	public void setName(String new_name) {
-		this.name = new_name;
+	public void setBalance(int balance) {
+		account.setBalance(balance);
 	}
 	
 	public int getBalance() {
 		return account.getBalance();
 	}
 	
-	public void setBalance(int new_balance) {
-		account.setBalance(new_balance);
+	public void addBalance(int balance){
+		account.addBalance(balance);
 	}
 	
-	public void addBalance(int add) {
+	public void depositBalance(int add) {
 		account.addBalance(add);
 	}
-	
-	public boolean CheckWin() {
-		return account.CheckWin();
+	public void withdrawBalance(int add) {
+		account.addBalance(-add);
 	}
 	
-	public String toString() {
-		return ("The player " + name + "has the " + account.toString());
-	}
+	
 }
+
 

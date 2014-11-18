@@ -20,7 +20,7 @@ public abstract class Ownable extends Field {
 		if (willing) {
 		this.owner = owner;
 		isowned = true;
-		this.owner.withdrawBalance(price);
+		this.owner.addBalance(-price);
 		}
 			
 	}
@@ -42,8 +42,8 @@ public abstract class Ownable extends Field {
 	// setWilling skal laves inden denne metode
 	public void LandOnField(Player player) {
 		if (isowned == true) {
-			player.withdrawBalance(getRent());
-			owner.depositBalance(getRent());
+			player.addBalance(-getRent());
+			owner.addBalance(getRent());
 		}
 		else {
 			buyField(player);

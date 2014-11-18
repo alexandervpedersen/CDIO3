@@ -6,5 +6,10 @@ public class Laborcamp extends Ownable {
 	public Laborcamp() {
 		
 	}
+	@Override
+	public int getRent() {
+		return baserent;
+	}
+	
 
 }

@@ -11,8 +11,12 @@ public class Fleet extends Ownable {
 	}
 	@Override
 	public int getRent() {
+		//imp. en return efter hvor mange fleets man ejer.
 		if ()
 		return rent;
+	}
+	@Override
+	public void LandOnField() {
 	}
 	
 	

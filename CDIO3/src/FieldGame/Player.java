@@ -4,10 +4,25 @@ public class Player {
 	
 	private String name;
 	private Account account;
+	private int Fleetammount = 0;
+	
+	public Player () {
+		name = "ERROR";
+		account = new Account();
+	}
 	
 	public Player (String new_name, Account new_account) {
 		this.name = new_name;
 		this.account = new_account;
+	}
+	public void set(int ammount_of_Fleets){
+		Fleetammount = ammount_of_Fleets;
+	}
+	public int getFleetammount() {
+		return Fleetammount;
+	}
+	public void addFleet() {
+		Fleetammount++;
 	}
 		
 	public String getName() {

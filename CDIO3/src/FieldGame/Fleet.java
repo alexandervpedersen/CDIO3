@@ -11,15 +11,16 @@ public class Fleet extends Ownable {
 	}
 	@Override
 	public int getRent() {
-		//imp. en return efter hvor mange fleets man ejer.
-		if ()
-		return rent;
+		if (owner.getFleetammount() == 1)
+			return rent_1;
+		else if (owner.getFleetammount() == 2)
+			return rent_2;
+		else if (owner.getFleetammount() == 3)
+			return rent_3;
+		else if (owner.getFleetammount() == 4)
+			return rent_4;
+		else
+			return 0;
 	}
-	@Override
-	public void LandOnField() {
-	}
-	
-	
-	
-
+	// tilføj en metode, at man får 1+ i fleetammount når man køber en fleet.
 }

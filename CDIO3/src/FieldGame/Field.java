@@ -6,11 +6,6 @@ public abstract class Field {
 		super();
 	}
 	
-	public abstract void LandOnField();
-
-	public void LandOnField(Player player) {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void LandOnField(Player player);
 
 }

@@ -1,10 +1,10 @@
 package FieldGame;
 
 public abstract class Ownable extends Field {
-	private int price;
-	private Player owner;
-	private boolean isowned = false;
-	boolean willing = false;
+	protected int price;
+	protected Player owner;
+	protected boolean isowned = false;
+	protected boolean willing = false;
 	
 	public Ownable() {
 		super();
@@ -16,7 +16,7 @@ public abstract class Ownable extends Field {
 	public int getPrice() {
 		return price;
 	}
-	public void buyField(Player owner) {
+	protected void buyField(Player owner) {
 		if (willing) {
 		this.owner = owner;
 		isowned = true;

@@ -1,11 +1,14 @@
 package FieldGame;
 
 public class Territory extends Ownable {
-	int rent;
+	private int rent;
 	
 	public Territory() {
 		super();
-		
+	}
+	@Override
+	public int getRent() {
+		return rent;
 	}
 
 }

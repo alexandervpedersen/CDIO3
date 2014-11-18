@@ -7,7 +7,7 @@ public class Fleet extends Ownable {
 	private int rent_4 = 4000;
 	
 	public Fleet() {
-		
+		super();
 	}
 	@Override
 	public int getRent() {
@@ -22,5 +22,32 @@ public class Fleet extends Ownable {
 		else
 			return 0;
 	}
-	// tilføj en metode, at man får 1+ i fleetammount når man køber en fleet.
+	/* tilføj en metode, at man får 1+ i fleetammount når man køber en fleet.
+	
+	*/
+	
+	public int getRent_1() {
+		return rent_1;
+	}
+	public void setRent_1(int rent_1) {
+		this.rent_1 = rent_1;
+	}
+	public int getRent_2() {
+		return rent_2;
+	}
+	public void setRent_2(int rent_2) {
+		this.rent_2 = rent_2;
+	}
+	public int getRent_3() {
+		return rent_3;
+	}
+	public void setRent_3(int rent_3) {
+		this.rent_3 = rent_3;
+	}
+	public int getRent_4() {
+		return rent_4;
+	}
+	public void setRent_4(int rent_4) {
+		this.rent_4 = rent_4;
+	}
 }

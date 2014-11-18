@@ -10,4 +10,7 @@ public class Territory extends Ownable {
 	public int getRent() {
 		return rent;
 	}
+	public void setRent(int rent) {
+		this.rent = rent;
+	}
 }

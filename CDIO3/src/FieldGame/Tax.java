@@ -27,6 +27,10 @@ public class Tax extends Field{
 			player.addBalance(-i);
 		}
 	}
+	@Override
+	public int getRent() {
+		return 0;
+	}
 	
 	
 

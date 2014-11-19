@@ -27,5 +27,19 @@ public class GameBoard {
 		board[20] = new Fleet("The Buccaneers", 4000);
 		board[21] = new Fleet("Privateer Armade", 4000);
 	}
+	public void setName(int fieldnumber, String new_name){
+		board[fieldnumber].setName(new_name);
+	}
+	public String getName(int fieldnumber){
+		return board[fieldnumber].getName();
+	}
+	public void LandOnField(int fieldnumber, Player player){
+		board[fieldnumber].LandOnField(player);
+	}
+	public int getRent(int fieldnumber){
+		return board[fieldnumber].getRent();
+	}
+
+
 
 }

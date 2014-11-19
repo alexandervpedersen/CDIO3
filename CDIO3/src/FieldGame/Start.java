@@ -34,6 +34,10 @@ public class Start extends Field {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public int getRent() {
+		return 0;
+	}
 	
 
 }

@@ -16,4 +16,5 @@ public abstract class Field {
 		this.name = name;
 	}
 	public abstract void LandOnField(Player player);
+	public abstract int getRent();
 }

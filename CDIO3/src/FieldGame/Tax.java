@@ -1,8 +1,8 @@
 package FieldGame;
 
-public class Tax {
+public class Tax extends Field{
 	private int taxAmmount;
-	private int taxRate = -1;
+	private boolean willing = false;
 	
 	public Tax() {
 		super();
@@ -16,12 +16,17 @@ public class Tax {
 	public void setTaxAmmount(int taxAmmount) {
 		this.taxAmmount = taxAmmount;
 	}
-	public int getTaxRate() {
-		return taxRate;
+
+	@Override
+	public void LandOnField(Player player) {
+		if (willing == false)
+			player.addBalance(-taxAmmount);
+		else if (willing == true) {
+			int i = player.getBalance() / 10;
+			player.addBalance(-i);
+		}
 	}
-	public void setTaxRate(int taxRate) {
-		this.taxRate = taxRate;
-	}
+	
 	
 
 }

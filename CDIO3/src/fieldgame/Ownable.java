@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public abstract class Ownable extends Field {
 	protected int price;

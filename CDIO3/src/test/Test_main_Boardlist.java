@@ -1,5 +1,5 @@
-package Test;
-import FieldGame.GameBoard;
+package test;
+import fieldgame.GameBoard;
 public class Test_main_Boardlist {
 
 	public static void main(String[] args) {

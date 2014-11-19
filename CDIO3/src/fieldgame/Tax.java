@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public class Tax extends Field{
 	private int taxAmmount;

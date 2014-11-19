@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public class Start extends Field {
 	private int income = 4000;

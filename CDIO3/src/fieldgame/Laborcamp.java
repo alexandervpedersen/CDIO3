@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public class Laborcamp extends Ownable {
 	Dicebox box = new Dicebox();

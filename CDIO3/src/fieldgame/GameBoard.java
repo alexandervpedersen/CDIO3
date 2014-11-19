@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public class GameBoard {
 	Field board[] = new Field[22];

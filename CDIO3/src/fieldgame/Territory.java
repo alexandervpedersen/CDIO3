@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public class Territory extends Ownable {
 	private int rent;

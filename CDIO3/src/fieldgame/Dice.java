@@ -1,4 +1,4 @@
-package FieldGame;
+package fieldgame;
 
 public class Dice {
 	private int dice;

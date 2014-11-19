@@ -21,7 +21,7 @@ public class Fleet extends Ownable {
 		else if (owner.getFleetammount() == 3)
 			return rent_3;
 		else if (owner.getFleetammount() == 4)
-			return rent_4;
+			return rent_4; 
 		else
 			return 0;
 	}

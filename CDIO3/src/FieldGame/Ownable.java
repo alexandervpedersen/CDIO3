@@ -10,8 +10,8 @@ public abstract class Ownable extends Field {
 		super();
 		price = 0;
 	}
-	public Ownable(int price) {
-		super();
+	public Ownable(String name, int price) {
+		super(name);
 		this.price = price;
 	}
 	

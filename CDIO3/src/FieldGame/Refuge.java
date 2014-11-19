@@ -7,7 +7,8 @@ public class Refuge extends Field {
 		super();
 	}
 	
-	public Refuge(int bonus){
+	public Refuge(String name, int bonus){
+		super(name);
 		this.bonus = bonus;
 	}
 	
@@ -22,6 +23,14 @@ public class Refuge extends Field {
 	@Override
 	public void LandOnField(Player player) {
 		player.addBalance(bonus);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 

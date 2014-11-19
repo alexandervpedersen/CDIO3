@@ -9,8 +9,8 @@ public class Fleet extends Ownable {
 	public Fleet() {
 		super();
 	}
-	public Fleet(int price) {
-		super(price);
+	public Fleet(String name, int price) {
+		super(name, price);
 	}
 	@Override
 	public int getRent() {

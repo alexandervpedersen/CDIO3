@@ -5,6 +5,10 @@ public class Start extends Field {
 	
 	public Start() {
 		income = 4000;
+		
+	}
+	public Start(String name){
+		super(name);
 	}
 
 	@Override
@@ -23,7 +27,13 @@ public class Start extends Field {
 	public void setIncome(int income) {
 		this.income = income;
 	}
-	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 	
 
 }

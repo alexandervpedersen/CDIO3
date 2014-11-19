@@ -6,8 +6,9 @@ public class Territory extends Ownable {
 	public Territory() {
 		super();
 	}
-	public Territory(int price) {
-		super(price);
+	public Territory(String name, int rent, int price) {
+		super(name, price);
+		this.rent = rent;
 	}
 	@Override
 	public int getRent() {
@@ -16,4 +17,11 @@ public class Territory extends Ownable {
 	public void setRent(int rent) {
 		this.rent = rent;
 	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 }

@@ -7,7 +7,8 @@ public class Tax extends Field{
 	public Tax() {
 		super();
 	}
-	public Tax(int taxAmmount) {
+	public Tax(String name, int taxAmmount) {
+		super(name);
 		this.taxAmmount = taxAmmount;
 	}
 	public int getTaxAmmount() {

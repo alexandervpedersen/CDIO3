@@ -1,18 +1,19 @@
 package FieldGame;
 
 public class Laborcamp extends Ownable {
+	Dicebox box = new Dicebox();
 	private int baserent;
 	
 	public Laborcamp() {
 		super();
 	}
-	public Laborcamp(int price, int baserent){
-		super(price);
-		this.baserent = baserent;
+	public Laborcamp(String name, int price){
+		super(name, price);
 	}
 	@Override
 	public int getRent() {
-		return baserent;
+		int rent = baserent * box.getSum();
+		return rent;
 	}
 	public void setBaserent(int baserent) {
 		this.baserent = baserent;

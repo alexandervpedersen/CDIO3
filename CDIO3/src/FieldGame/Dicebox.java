@@ -1,13 +1,13 @@
 package FieldGame;
 
-public class DiceBox {
+public class Dicebox {
 	
 	//Dice t1;
 	//Dice t2;
 	int numberOfDice = 2;
 	Dice[] box  = new Dice[numberOfDice];
 	
-	public DiceBox(){
+	public Dicebox(){
 	this.box[0] = new Dice(); 
 	this.box[1] = new Dice(); 
 	}

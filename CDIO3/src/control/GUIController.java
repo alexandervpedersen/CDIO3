@@ -1,6 +1,8 @@
 package control;
 import boundaryToMatador.GUI;
 import javax.swing.JOptionPane;
+import fieldgame.Player;
+
 public class GUIController {
 
 	public int getNumOfPlayers() {
@@ -18,4 +20,9 @@ public class GUIController {
 		String name = JOptionPane.showInputDialog("Enter name of player " +playernumber);
 		return name;
 	}
+	public void addPlayer(Player player){
+		GUI.addPlayer(player.getName(), player.getBalance());
+	}
+	
+	
 }

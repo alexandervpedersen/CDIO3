@@ -6,6 +6,9 @@ public class Territory extends Ownable {
 	public Territory() {
 		super();
 	}
+	public Territory(int price) {
+		super(price);
+	}
 	@Override
 	public int getRent() {
 		return rent;

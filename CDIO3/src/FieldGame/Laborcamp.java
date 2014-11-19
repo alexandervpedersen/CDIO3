@@ -1,10 +1,14 @@
 package FieldGame;
 
 public class Laborcamp extends Ownable {
-	int baserent;
+	private int baserent;
 	
 	public Laborcamp() {
 		super();
+	}
+	public Laborcamp(int price, int baserent){
+		super(price);
+		this.baserent = baserent;
 	}
 	@Override
 	public int getRent() {

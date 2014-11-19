@@ -10,6 +10,11 @@ public abstract class Ownable extends Field {
 		super();
 		price = 0;
 	}
+	public Ownable(int price) {
+		super();
+		this.price = price;
+	}
+	
 	public void setPrice(int price) {
 		this.price = price;
 	}
@@ -49,7 +54,7 @@ public abstract class Ownable extends Field {
 			player.addBalance(-getRent());
 			owner.addBalance(getRent());
 		}
-		else {
+		else if (willing == true){
 			buyField(player);
 			resetWilling();
 		}

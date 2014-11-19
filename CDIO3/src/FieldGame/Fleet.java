@@ -9,6 +9,9 @@ public class Fleet extends Ownable {
 	public Fleet() {
 		super();
 	}
+	public Fleet(int price) {
+		super(price);
+	}
 	@Override
 	public int getRent() {
 		if (owner.getFleetammount() == 1)

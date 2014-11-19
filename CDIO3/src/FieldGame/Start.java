@@ -38,6 +38,10 @@ public class Start extends Field {
 	public int getRent() {
 		return 0;
 	}
+	@Override
+	public String toString() {
+		return name+": Type[Start] [income=" + income + "]";
+	}
 	
 
 }

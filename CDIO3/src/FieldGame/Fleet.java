@@ -59,4 +59,9 @@ public class Fleet extends Ownable {
 	public void setRent_4(int rent_4) {
 		this.rent_4 = rent_4;
 	}
+	@Override
+	public String toString() {
+		return name+": Type[Fleet] [rent_1=" + rent_1 + ", rent_2=" + rent_2 + ", rent_3="
+				+ rent_3 + ", rent_4=" + rent_4 + "]";
+	}
 }

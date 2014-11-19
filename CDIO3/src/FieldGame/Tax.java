@@ -31,6 +31,10 @@ public class Tax extends Field{
 	public int getRent() {
 		return 0;
 	}
+	@Override
+	public String toString() {
+		return name+": Type[Tax] [taxAmmount=" + taxAmmount + "]";
+	}
 	
 	
 

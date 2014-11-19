@@ -23,5 +23,10 @@ public class Territory extends Ownable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return name+": Type[Territory] [rent=" + rent + "]";
+	}
+	
 	
 }

@@ -37,6 +37,11 @@ public class Refuge extends Field {
 	public int getRent() {
 		return 0;
 	}
+
+	@Override
+	public String toString() {
+		return name+": Type[Refuge] [bonus=" + bonus + "]";
+	}
 	
 
 }

@@ -39,6 +39,13 @@ public class GameBoard {
 	public int getRent(int fieldnumber){
 		return board[fieldnumber].getRent();
 	}
+	public String toString() {
+		String out = "";
+		for (int i=1; i<=board.length; i++){
+			out += board[i-1].toString()+"\n";
+		}
+		return out;
+	}
 
 
 

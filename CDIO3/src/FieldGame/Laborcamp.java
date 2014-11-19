@@ -18,4 +18,9 @@ public class Laborcamp extends Ownable {
 	public void setBaserent(int baserent) {
 		this.baserent = baserent;
 	}
+	@Override
+	public String toString() {
+		return name+": Type[Laborcamp] [baserent=" + baserent + "]";
+	}
+	
 }

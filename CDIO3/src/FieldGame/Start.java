@@ -5,7 +5,6 @@ public class Start extends Field {
 	
 	public Start() {
 		income = 4000;
-		
 	}
 	public Start(String name){
 		super(name);

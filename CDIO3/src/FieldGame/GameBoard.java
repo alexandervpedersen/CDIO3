@@ -4,7 +4,7 @@ public class GameBoard {
 	Field board[] = new Field[22];
 	
 	public GameBoard() {
-		board[0] = new Start();
+		board[0] = new Start("Start");
 		board[1] = new Territory("Tribe Encampment", 100, 1000);
 		board[2] = new Territory("Crater", 300, 1500);
 		board[3] = new Territory("Mountain", 500, 2000);

@@ -9,10 +9,12 @@ public class GUIController {
 		boolean run = true;
 		int n = 0;
 		while (run == true) {
-		String NOP = JOptionPane.showInputDialog("Enter number of players");
+		String NOP = JOptionPane.showInputDialog("Enter number of players (between 2-6)");
 		n = Integer.parseInt(NOP);
 		if (n >= 2 && n <= 6)
 			run = false;
+		else
+			JOptionPane.showMessageDialog(null, "Enter between 2-6 players", "ERROR", JOptionPane.PLAIN_MESSAGE);
 		}
 		return n;
 	}

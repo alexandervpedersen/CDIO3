@@ -6,14 +6,19 @@ import fieldgame.Player;
 public class GameController {
 	GUIController GUIC = new GUIController();
 	
+	public void init(){
+		createGame();
+	}
+	
 	public void createGame() {
 		int num = GUIC.getNumOfPlayers();
 		Player players[] = new Player[num];
 		for (int i=1; i<=num; i++){
-			players[i] = new Player(GUIC.getPlayername(i), new Account());
-			GUIC.addPlayer(players[i]);
+			players[i-1] = new Player(GUIC.getPlayername(i), new Account());
 		}
-		
+		for (int i=1; i<=num; i++){
+			GUIC.addPlayer(players[i-1]);
+		}
 		
 	}
 

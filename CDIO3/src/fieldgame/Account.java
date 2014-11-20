@@ -2,10 +2,9 @@ package fieldgame;
 
 public class Account {
 		
-	private int balance;
+	private int balance = 30000;
 	
 	public Account() {
-		this.balance = 0;
 	}
 	
 	public Account(int balance) {

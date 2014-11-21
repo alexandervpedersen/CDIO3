@@ -6,6 +6,7 @@ public class Player {
 	private Account account;
 	private int currentfield = 1;
 	private int Fleetammount = 0;
+	private boolean isAlive = true;
 	protected boolean willing = false;
 	
 	public Player () {
@@ -63,8 +64,14 @@ public class Player {
 	}
 	
 	public boolean CheckDeath(){
-		return account.CheckDeath();
+		if (account.CheckDeath() == true)
+			isAlive = false;
+		return isAlive;
 	}
+	public boolean getAlive() {
+		return isAlive;
+	}
+	
 	public void setWilling(boolean wantbuy) {
 		willing = wantbuy;
 	}

@@ -41,5 +41,8 @@ public class GUIController {
 	public void setOwner(Player player, int fieldnumber) {
 		GUI.setOwner(fieldnumber, player.getName());
 	}
+	public void removePlayer(Player player) {
+		GUI.removeAllCars(player.getName());
+	}
 	
 }

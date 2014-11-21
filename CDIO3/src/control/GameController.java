@@ -7,6 +7,8 @@ public class GameController {
 	GUIController GUIC = new GUIController();
 	GameBoard board = new GameBoard();
 	Dicebox box = new Dicebox();
+	Player players[];
+	boolean run = true;
 	
 	public void init(){
 		createGame();
@@ -43,5 +45,23 @@ public class GameController {
 		player.movePlayer(box.getSum());
 		GUIC.movePlayer(player, player.getCurrentfield());
 		landOnField(player, player.getCurrentfield());
+	}
+	public boolean checkDeath(Player player) {
+		player.CheckDeath();
+		return player.getAlive();
+	}
+	public boolean checkWinner() {
+		// på en eller anden måde skal der tjekkes for en winner her
+	}
+	
+	public void runGame() {
+		while (run) {
+			for (int i=1; i<=players.length; i++) {
+				if (checkDeath(players[i]) == true) {
+				runTurn(players[i]);
+				}
+				
+			}
+		}
 	}
 }

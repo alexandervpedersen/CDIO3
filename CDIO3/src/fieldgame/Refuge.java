@@ -21,7 +21,7 @@ public class Refuge extends Field {
 	}
 
 	@Override
-	public void LandOnField(Player player) {
+	public void landOnField(Player player) {
 		player.addBalance(bonus);
 	}
 

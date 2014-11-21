@@ -49,7 +49,7 @@ public abstract class Ownable extends Field {
 	 * der skal tjekkes med isOwned inden, - for at simulere spørgsmålet inden det faktisk bliver stilt
 	*/
 	
-	public void LandOnField(Player player) {
+	public void landOnField(Player player) {
 		if (isowned == true) {
 			player.addBalance(-getRent());
 			owner.addBalance(getRent());

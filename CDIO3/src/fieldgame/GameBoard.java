@@ -33,8 +33,8 @@ public class GameBoard {
 	public String getName(int fieldnumber){
 		return board[fieldnumber].getName();
 	}
-	public void LandOnField(int fieldnumber, Player player){
-		board[fieldnumber].LandOnField(player);
+	public void landOnField(int fieldnumber, Player player){
+		board[fieldnumber].landOnField(player);
 	}
 	public int getRent(int fieldnumber){
 		return board[fieldnumber].getRent();

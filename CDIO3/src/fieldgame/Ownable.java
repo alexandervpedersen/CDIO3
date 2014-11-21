@@ -29,8 +29,13 @@ public abstract class Ownable extends Field {
 		}
 			
 	}
-	public String getOwner() {
+	public String getOwnerName() {
 		return owner.getName();
+	}
+	
+	
+	public Player getOwner() {
+		return owner;
 	}
 	
 	public void setWilling(boolean wantbuy) {

@@ -23,17 +23,6 @@ public class Territory extends Ownable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void LandOnField(Player player) {
-		if (super.getOwner() == null){
-			//Vil den købes? super.buyField();
-		}
-		if (super.getOwner() =! null){
-			if (player != super.getOwner()){
-				getRent();
-			}
-		}
-	}
-	
 		
 	@Override
 	public String toString() {

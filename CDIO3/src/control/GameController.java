@@ -14,7 +14,7 @@ public class GameController {
 		int num = GUIC.getNumOfPlayers();
 		Player players[] = new Player[num];
 		for (int i=1; i<=num; i++){
-			players[i-1] = new Player(GUIC.getPlayername(i), new Account());
+			players[i-1] = new Player(GUIC.getPlayername(i));
 		}
 		for (int i=1; i<=num; i++){
 			GUIC.addPlayer(players[i-1]);

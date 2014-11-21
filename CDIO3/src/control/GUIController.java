@@ -44,5 +44,8 @@ public class GUIController {
 	public void removePlayer(Player player) {
 		GUI.removeAllCars(player.getName());
 	}
+	public void printWinner(Player player) {
+		GUI.showMessage("Congratulations"+player.getName()+", you won the game!");
+	}
 	
 }

@@ -13,6 +13,7 @@ public class GameController {
 	public void init(){
 		createGame();
 		runGame();
+		printWinner();
 	}
 	
 	public void createGame() {
@@ -54,126 +55,128 @@ public class GameController {
 	public boolean checkWinner(int playernumber, int numofplayers) {
 		switch (numofplayers) {
 		case 2:
-			if (playernumber == 1)
-				if (players[2].getAlive()==false)
+			if (playernumber == 0)
+				if (players[1].getAlive()==false)
 					return true;
 				else 
 					return false;
-			else if (playernumber == 2)
-				if (players[1].getAlive()==false)
+			else if (playernumber == 1)
+				if (players[0].getAlive()==false)
 					return true;
 				else
 					return false;
 			else
 				return false;
 		case 3:
-			if (playernumber == 1)
-				if (players[2].getAlive()==false && players[3].getAlive()==false)
+			if (playernumber == 0)
+				if (players[1].getAlive()==false && players[2].getAlive()==false)
 					return true;
 				else 
 					return false;
-			else if (playernumber == 2)
-				if (players[1].getAlive()==false && players[3].getAlive()==false)
+			else if (playernumber == 1)
+				if (players[0].getAlive()==false && players[2].getAlive()==false)
 					return true;
 				else
 					return false;
-			else if (playernumber == 3)
-				if (players[1].getAlive()==false && players[2].getAlive()==false)
+			else if (playernumber == 2)
+				if (players[0].getAlive()==false && players[1].getAlive()==false)
 					return true;
 				else
 					return false;
 			else
 				return false;
 		case 4:
-			if (playernumber == 1)
-				if (players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
+			if (playernumber == 0)
+				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false)
 					return true;
 				else 
 					return false;
+			else if (playernumber == 1)
+				if (players[0].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false)
+					return true;
+				else
+					return false;
 			else if (playernumber == 2)
-				if (players[1].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[3].getAlive()==false)
 					return true;
 				else
 					return false;
 			else if (playernumber == 3)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[4].getAlive()==false)
-					return true;
-				else
-					return false;
-			else if (playernumber == 4)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[2].getAlive()==false)
 					return true;
 				else
 					return false;
 			else
 				return false;
 		case 5:
-			if (playernumber == 1)
-				if (players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
+			if (playernumber == 0)
+				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
 					return true;
 				else 
 					return false;
+			else if (playernumber == 1)
+				if (players[0].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
+					return true;
+				else
+					return false;
 			else if (playernumber == 2)
-				if (players[1].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
 					return true;
 				else
 					return false;
 			else if (playernumber == 3)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[2].getAlive()==false && players[4].getAlive()==false)
 					return true;
 				else
 					return false;
 			else if (playernumber == 4)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[5].getAlive()==false)
-					return true;
-				else
-					return false;
-			else if (playernumber == 5)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false)
 					return true;
 				else
 					return false;
 			else
 				return false;
 		case 6:
-			if (playernumber == 1)
-				if (players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false && players[6].getAlive()==false)
+			if (playernumber == 0)
+				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
 					return true;
 				else 
 					return false;
+			else if (playernumber == 1)
+				if (players[0].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
+					return true;
+				else
+					return false;
 			else if (playernumber == 2)
-				if (players[1].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false && players[6].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
 					return true;
 				else
 					return false;
 			else if (playernumber == 3)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false && players[6].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[2].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
 					return true;
 				else
 					return false;
 			else if (playernumber == 4)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[5].getAlive()==false && players[6].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[5].getAlive()==false)
 					return true;
 				else
 					return false;
 			else if (playernumber == 5)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[6].getAlive()==false)
-					return true;
-				else
-					return false;
-			else if (playernumber == 6)
-				if (players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false && players[5].getAlive()==false)
+				if (players[0].getAlive()==false && players[1].getAlive()==false && players[2].getAlive()==false && players[3].getAlive()==false && players[4].getAlive()==false)
 					return true;
 				else
 					return false;
 			else
 				return false;
+		default:
+			return false;
 		}
 	}
 	
 	public void runGame() {
 		while (run) {
-			for (int i=1; i<=players.length; i++) {
+			for (int i=0; i<=players.length; i++) {
 				if (checkDeath(players[i]) == true) {
 				runTurn(players[i]);
 				checkWinner(i, players.length);
@@ -181,5 +184,11 @@ public class GameController {
 				
 			}
 		}
+	}
+	public void printWinner() {
+		for (int i=0; i <= players.length; i++)
+		if (players[1].getAlive())
+			GUIC.printWinner(players[i]);
+
 	}
 }

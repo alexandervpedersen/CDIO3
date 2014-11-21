@@ -28,7 +28,7 @@ public class Fleet extends Ownable {
 	}
 	@Override
 	public void buyField(Player player) {
-		if (willing) {
+		if (player.willing) {
 			owner = player;
 			isowned = true;
 			owner.addBalance(-price);

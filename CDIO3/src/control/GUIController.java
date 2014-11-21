@@ -25,6 +25,21 @@ public class GUIController {
 	public void addPlayer(Player player){
 		GUI.addPlayer(player.getName(), player.getBalance());
 	}
-	
+	public boolean checkWilling() {
+		return GUI.getUserLeftButtonPressed("This Field is not owned, do you wish to buy it?", "YES", "NO");
+	}
+	public void throwDice(Player player) {
+		GUI.getUserButtonPressed(player+" press THROW to throw the dice", "THROW");
+	}
+	public void showDice(int dice1, int dice2) {
+		GUI.setDice(dice1, dice2);
+	}
+	public void movePlayer(Player player, int fieldnumber) {
+		GUI.removeAllCars(player.getName());
+		GUI.setCar(fieldnumber, player.getName());
+	}
+	public void setOwner(Player player, int fieldnumber) {
+		GUI.setOwner(fieldnumber, player.getName());
+	}
 	
 }

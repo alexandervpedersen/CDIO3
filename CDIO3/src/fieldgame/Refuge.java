@@ -42,6 +42,4 @@ public class Refuge extends Field {
 	public String toString() {
 		return name+": Type[Refuge] [bonus=" + bonus + "]";
 	}
-	
-
 }

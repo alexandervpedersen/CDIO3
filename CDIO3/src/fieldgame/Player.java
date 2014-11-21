@@ -44,8 +44,8 @@ public class Player {
 		account.addBalance(add);
 	}
 	
-	public boolean CheckWin() {
-		return account.CheckWin();
+	public boolean CheckDeath(){
+		return account.CheckDeath();
 	}
 	
 	public String toString() {

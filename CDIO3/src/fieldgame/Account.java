@@ -28,8 +28,8 @@ public class Account {
 			this.balance = balance + add;
 	}
 	
-	public boolean CheckWin() {
-		if (balance >= 3000)
+	public boolean CheckDeath(){
+		if (balance<=0)
 			return true;
 		else
 			return false;

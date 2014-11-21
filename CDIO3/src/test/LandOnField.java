@@ -13,7 +13,7 @@ public class LandOnField {
 	public void test1(){
 	//Preconditions
 		// Opretter helholdsvis player og gameboardet, account indholder en balance.
-		Player player = new Player("TestPerson",new Account(30000));
+		Player player = new Player("TestPerson");
 		GameBoard gameboard = new GameBoard();
 		
 	//Test
@@ -30,7 +30,7 @@ public class LandOnField {
 	public void test2(){
 	//Preconditions
 		// Opretter helholdsvis player og gameboardet, account indholder en balance.
-		Player player = new Player("TestPerson",new Account(30000));
+		Player player = new Player("TestPerson");
 		GameBoard gameboard = new GameBoard();
 		
 	//Test
@@ -49,7 +49,7 @@ public class LandOnField {
 		public void test3(){
 		//Preconditions
 			// Opretter helholdsvis player og gameboardet, account indholder en balance.
-			Player player = new Player("TestPerson",new Account(30000));
+			Player player = new Player("TestPerson");
 			GameBoard gameboard = new GameBoard();
 			
 		//Test

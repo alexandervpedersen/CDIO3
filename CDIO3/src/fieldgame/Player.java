@@ -10,9 +10,16 @@ public class Player {
 		name = "ERROR";
 		account = new Account();
 	}
-	
+	/**
+	 * Test til Create Players i main
+	 * @author Gruppe 53
+	 */
+	public Player(String new_name){
+		this.name = new_name;
+	}
 	public Player (String new_name, Account new_account) {
 		this.name = new_name;
+		//Hvad linker account til her?
 		this.account = new_account;
 	}
 	public void set(int ammount_of_Fleets){
@@ -52,4 +59,5 @@ public class Player {
 	public String toString() {
 		return ("The player " + name + "has the " + account.toString());
 	}
+
 }

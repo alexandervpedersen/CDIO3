@@ -13,7 +13,7 @@ public class GameController {
 	public void init(){
 		createGame();
 		runGame();
-		printWinner();
+		showWinner();
 	}
 	
 	public void createGame() {
@@ -185,7 +185,7 @@ public class GameController {
 			}
 		}
 	}
-	public void printWinner() {
+	public void showWinner() {
 		for (int i=0; i <= players.length; i++)
 		if (players[1].getAlive())
 			GUIC.printWinner(players[i]);

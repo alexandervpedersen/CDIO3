@@ -7,7 +7,7 @@ public class GameController {
 	GUIController GUIC = new GUIController();
 	GameBoard board = new GameBoard();
 	Dicebox box = new Dicebox();
-	Player players[];
+	private Player players[];
 	boolean run = true;
 	
 	public void init(){
@@ -18,7 +18,7 @@ public class GameController {
 	
 	public void createGame() {
 		int num = GUIC.getNumOfPlayers();
-		Player players[] = new Player[num];
+		players = new Player[num];
 		for (int i=1; i<=num; i++){
 			players[i-1] = new Player(GUIC.getPlayername(i));
 		}

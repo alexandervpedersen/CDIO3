@@ -30,12 +30,10 @@ public class Fleet extends Ownable {
 	}
 	@Override
 	public void buyField(Player player) {
-		if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it?", "YES", "NO")) {
 			owner = player;
 			isowned = true;
 			owner.addBalance(-price);
 			owner.addFleet();
-		}
 	}
 	@Override
 	public void landOnField(Player player) {

@@ -22,6 +22,12 @@ public class Territory extends Ownable {
 			buyField(player);
 		}
 	}
+	@Override
+	public void buyField(Player player) {
+		owner = player;
+		isowned = true;
+		owner.addBalance(-price);
+	}
 	
 	@Override
 	public int getRent() {

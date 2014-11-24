@@ -25,6 +25,12 @@ public class Laborcamp extends Ownable {
 			buyField(player);
 		}
 	}
+	@Override
+	public void buyField(Player player) {
+		owner = player;
+		isowned = true;
+		owner.addBalance(-price);
+	}
 	public void setBaserent(int baserent) {
 		this.baserent = baserent;
 	}

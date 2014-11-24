@@ -45,7 +45,7 @@ public class GameController {
 		box.rollDice();
 		GUIC.showDice(box.getDice(0), box.getDice(1));
 		player.movePlayer(box.getSum());
-		GUIC.movePlayer(player, player.getCurrentfield());
+		GUIC.movePlayer(player);
 		landOnField(player, player.getCurrentfield());
 	}
 	public boolean checkDeath(Player player) {
@@ -176,7 +176,7 @@ public class GameController {
 	
 	public void runGame() {
 		while (run) {
-			for (int i=0; i<=players.length; i++) {
+			for (int i=0; i<=players.length-1; i++) {
 				if (checkDeath(players[i]) == true) {
 				runTurn(players[i]);
 				checkWinner(i, players.length);

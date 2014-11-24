@@ -34,9 +34,9 @@ public class GUIController {
 	public void showDice(int dice1, int dice2) {
 		GUI.setDice(dice1, dice2);
 	}
-	public void movePlayer(Player player, int fieldnumber) {
+	public void movePlayer(Player player) {
 		GUI.removeAllCars(player.getName());
-		GUI.setCar(fieldnumber, player.getName());
+		GUI.setCar(player.getCurrentfield(), player.getName());
 	}
 	public void setOwner(Player player, int fieldnumber) {
 		GUI.setOwner(fieldnumber, player.getName());

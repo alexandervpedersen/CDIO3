@@ -68,7 +68,7 @@ public class LandOnField {
 		public void test4(){
 		//Preconditions
 			// Opretter helholdsvis player og gameboardet, account indholder en balance.
-			Player player = new Player("TestPerson",new Account(30000));
+			Player player = new Player("TestPerson");
 			GameBoard gameboard = new GameBoard();
 			
 		//Test

@@ -13,15 +13,6 @@ public class Fleet extends Ownable {
 		super(name, price);
 	}
 	
-	public void LandOnField(Player player) {
-		if (super.getOwner() == null){
-			//Vil den købes?
-		}
-		else if (player != super.getOwner()){
-		getRent();
-			}	
-		}
-	
 	@Override
 	public int getRent() {
 		if (owner.getFleetammount() == 1)
@@ -37,7 +28,7 @@ public class Fleet extends Ownable {
 	}
 	@Override
 	public void buyField(Player player) {
-		if (willing) {
+		if (player.willing) {
 			owner = player;
 			isowned = true;
 			owner.addBalance(-price);

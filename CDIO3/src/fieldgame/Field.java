@@ -17,4 +17,9 @@ public abstract class Field {
 	}
 	public abstract void landOnField(Player player);
 	public abstract int getRent();
+	public boolean needPayment() {
+		return true;
+	}
+	public void passStart(Player player) {
+	}
 }

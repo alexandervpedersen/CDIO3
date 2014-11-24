@@ -14,7 +14,7 @@ public class Start extends Field {
 	public void landOnField(Player player) {
 		passStart(player);
 	}
-	
+	@Override
 	public void passStart(Player player) {
 		player.addBalance(income);
 	}

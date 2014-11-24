@@ -4,7 +4,6 @@ public abstract class Ownable extends Field {
 	protected int price;
 	protected Player owner;
 	protected boolean isowned = false;
-	protected boolean willing = false;
 	
 	public Ownable() {
 		super();
@@ -22,30 +21,16 @@ public abstract class Ownable extends Field {
 		return price;
 	}
 	protected void buyField(Player player) {
-		if (willing) {
 		owner = player;
 		isowned = true;
 		owner.addBalance(-price);
-		}
-			
 	}
 	public String getOwnerName() {
 		return owner.getName();
 	}
 	
-	
 	public Player getOwner() {
 		return owner;
-	}
-	
-	public void setWilling(boolean wantbuy) {
-		willing = wantbuy;
-	}
-	public boolean getWilling() {
-		return willing;
-	}
-	public void resetWilling() {
-		willing = false;
 	}
 	
 	@Override
@@ -59,15 +44,16 @@ public abstract class Ownable extends Field {
 			player.addBalance(-getRent());
 			owner.addBalance(getRent());
 		}
-		else if (willing == true){
+		else if (player.willing == true){
 			buyField(player);
-			resetWilling();
+			player.resetWilling();
 		}
 	}
 	
 	public abstract int getRent();
-		
-	public boolean isOwned() {
+	
+	@Override
+	public boolean needPayment() {
 		return isowned;	
 	}
 }

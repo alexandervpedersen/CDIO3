@@ -18,7 +18,7 @@ public class Territory extends Ownable {
 			player.addBalance(-getRent());
 			owner.addBalance(getRent());
 		}
-		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it?", "YES", "NO")){
+		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it? "+player.getName(), "YES", "NO")){
 			buyField(player);
 		}
 	}

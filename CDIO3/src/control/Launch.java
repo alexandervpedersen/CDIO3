@@ -7,10 +7,8 @@ public class Launch {
 		control.init();
 		/** 
 		 * fejl:
-		 * ingen farver
-		 * GUI ikke ændretd
-		 * Field rækkefølge
-		 * crash ved opstart af matador GUI
+		 * ingen bilfarver
+		 * 
 		 */
 		
 

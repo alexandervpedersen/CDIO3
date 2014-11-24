@@ -38,7 +38,8 @@ public class GameController {
 		player.movePlayer(box.getSum());
 		GUIC.movePlayer(player);
 		landOnField(player, player.getCurrentfield());
-		GUIC.updateBalance(player);
+		for (int i=0; i<=players.length-1; i++)
+		GUIC.updateBalance(players[i]);
 	}
 	public boolean checkDeath(Player player) {
 		player.CheckDeath();

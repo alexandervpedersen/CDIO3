@@ -21,7 +21,7 @@ public class Laborcamp extends Ownable {
 			player.addBalance(-getRent(boxsum));
 			owner.addBalance(getRent(boxsum));
 		}
-		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it?", "YES", "NO")){
+		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it? "+player.getName(), "YES", "NO")){
 			buyField(player);
 		}
 	}

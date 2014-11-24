@@ -7,7 +7,6 @@ public class Player {
 	private int currentfield = 1;
 	private int Fleetammount = 0;
 	private boolean isAlive = true;
-	protected boolean willing = false;
 	
 	public Player () {
 		name = "ERROR";
@@ -44,15 +43,14 @@ public class Player {
 		currentfield = currentfield + move;
 		if (currentfield > 22) {
 			currentfield = currentfield - 22;
-			passStart();
 		}
-	}
-	public void passStart() {
-		addBalance(4000);
 	}
 	
 	public int getBalance() {
-		return account.getBalance();
+		if (isAlive == false)
+			return 0;
+		else 
+			return account.getBalance();
 	}
 	
 	public void setBalance(int new_balance) {
@@ -70,16 +68,6 @@ public class Player {
 	}
 	public boolean getAlive() {
 		return isAlive;
-	}
-	
-	public void setWilling(boolean wantbuy) {
-		willing = wantbuy;
-	}
-	public boolean getWilling() {
-		return willing;
-	}
-	public void resetWilling() {
-		willing = false;
 	}
 	
 	public String toString() {

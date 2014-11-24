@@ -1,12 +1,10 @@
 package test;
 import fieldgame.Player;
-import fieldgame.Account;
 import fieldgame.GameBoard;
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
-public class LandOnField {
+public class Test_LandOnField {
 
 //Test case 1, lands on field 12.
 	@Test
@@ -18,8 +16,9 @@ public class LandOnField {
 		
 	//Test
 		//Simulerer at spilleren lander på feltet 12.
-			gameboard.landOnField(12, player);
-	
+			gameboard.landOnField(17, player);
+			System.out.println();
+			
 	//Postconditions
 			//Benytter JUnit til at se om de er lig hinanden, da 5000 bliver tilført på beholdning ved at lande på 12.
 			assertEquals(35000,player.getBalance());
@@ -35,11 +34,10 @@ public class LandOnField {
 		
 	//Test
 		//Simulerer at spilleren lander på feltet 17.
-			gameboard.landOnField(17, player);
+			gameboard.landOnField(4, player);
 	
 	//Postconditions
 			//Benytter JUnit til at se om de er lig hinanden.
-			System.out.println(player.getBalance());
 			//Test 10%
 			assertEquals(27000,player.getBalance());
 	}
@@ -54,11 +52,10 @@ public class LandOnField {
 			
 		//Test
 			//Simulerer at spilleren lander på feltet 17.
-				gameboard.landOnField(17, player);
+				gameboard.landOnField(4, player);
 		
 		//Postconditions
 				//Benytter JUnit til at se om de er lig hinanden.
-				System.out.println(player.getBalance());
 				//Test 4000
 				assertEquals(26000,player.getBalance());
 		}
@@ -73,13 +70,11 @@ public class LandOnField {
 			
 		//Test
 			//Simulerer at spilleren lander på feltet 16.
-				gameboard.landOnField(16, player);
+				gameboard.landOnField(19, player);
 		
 		//Postconditions
 				//Benytter JUnit til at se om de er lig hinanden.
-				System.out.println(player.getBalance());
 				//Test 2000
 				assertEquals(28000,player.getBalance());
 		}
-
 }

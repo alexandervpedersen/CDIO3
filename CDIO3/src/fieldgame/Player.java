@@ -42,7 +42,7 @@ public class Player {
 	}
 	public void movePlayer(int move) {
 		currentfield = currentfield + move;
-		if (currentfield < 22) {
+		if (currentfield > 22) {
 			currentfield = currentfield - 22;
 			passStart();
 		}

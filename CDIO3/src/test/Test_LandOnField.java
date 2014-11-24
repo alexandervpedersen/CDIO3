@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class Test_LandOnField {
 
-//Test case 1, lands on field 12.
+//Test case 1, lands on field 17.
 	@Test
 	public void test1(){
 	//Preconditions
@@ -15,16 +15,16 @@ public class Test_LandOnField {
 		GameBoard gameboard = new GameBoard();
 		
 	//Test
-		//Simulerer at spilleren lander på feltet 12.
+		//Simulerer at spilleren lander på feltet 17.
 			gameboard.landOnField(17, player);
 			System.out.println();
 			
 	//Postconditions
-			//Benytter JUnit til at se om de er lig hinanden, da 5000 bliver tilført på beholdning ved at lande på 12.
+			//Benytter JUnit til at se om de er lig hinanden, da 5000 bliver tilført på beholdning ved at lande på 17.
 			assertEquals(35000,player.getBalance());
 	}
 
-//Test case 2, lands on field 17.
+//Test case 2, lands on field 4.
 	@Test
 	public void test2(){
 	//Preconditions
@@ -33,7 +33,7 @@ public class Test_LandOnField {
 		GameBoard gameboard = new GameBoard();
 		
 	//Test
-		//Simulerer at spilleren lander på feltet 17.
+		//Simulerer at spilleren lander på feltet 4.
 			gameboard.landOnField(4, player);
 	
 	//Postconditions
@@ -42,7 +42,7 @@ public class Test_LandOnField {
 			assertEquals(27000,player.getBalance());
 	}
 	
-	//Test case 3, lands on field 17.
+	//Test case 3, lands on field 4.
 		@Test
 		public void test3(){
 		//Preconditions
@@ -51,7 +51,7 @@ public class Test_LandOnField {
 			GameBoard gameboard = new GameBoard();
 			
 		//Test
-			//Simulerer at spilleren lander på feltet 17.
+			//Simulerer at spilleren lander på feltet 4.
 				gameboard.landOnField(4, player);
 		
 		//Postconditions
@@ -60,7 +60,7 @@ public class Test_LandOnField {
 				assertEquals(26000,player.getBalance());
 		}
 		
-		//Test case 4, lands on field 16.
+		//Test case 4, lands on field 19.
 		@Test
 		public void test4(){
 		//Preconditions
@@ -69,7 +69,7 @@ public class Test_LandOnField {
 			GameBoard gameboard = new GameBoard();
 			
 		//Test
-			//Simulerer at spilleren lander på feltet 16.
+			//Simulerer at spilleren lander på feltet 19.
 				gameboard.landOnField(19, player);
 		
 		//Postconditions

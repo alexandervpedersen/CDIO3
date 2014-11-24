@@ -3,7 +3,7 @@ package fieldgame;
 import boundaryToMatador.GUI;
 
 public class Laborcamp extends Ownable {
-	private int baserent;
+	private int baserent = 100;
 	
 	public Laborcamp() {
 		super();

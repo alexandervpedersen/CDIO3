@@ -18,6 +18,10 @@ public class GUIController {
 		}
 		return n;
 	}
+	public void createText() {
+		GUI.create("fieldsfx.txt");
+	}
+	
 	public String getPlayername(int playernumber) {
 		String name = JOptionPane.showInputDialog("Enter name of player " +playernumber);
 		return name;

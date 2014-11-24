@@ -17,6 +17,7 @@ public class GameController {
 	}
 	
 	public void createGame() {
+		GUIC.createText();
 		int num = GUIC.getNumOfPlayers();
 		players = new Player[num];
 		for (int i=1; i<=num; i++){

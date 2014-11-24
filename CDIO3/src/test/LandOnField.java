@@ -62,5 +62,24 @@ public class LandOnField {
 				//Test 4000
 				assertEquals(26000,player.getBalance());
 		}
+		
+		//Test case 4, lands on field 16.
+		@Test
+		public void test4(){
+		//Preconditions
+			// Opretter helholdsvis player og gameboardet, account indholder en balance.
+			Player player = new Player("TestPerson",new Account(30000));
+			GameBoard gameboard = new GameBoard();
+			
+		//Test
+			//Simulerer at spilleren lander på feltet 16.
+				gameboard.landOnField(16, player);
+		
+		//Postconditions
+				//Benytter JUnit til at se om de er lig hinanden.
+				System.out.println(player.getBalance());
+				//Test 2000
+				assertEquals(28000,player.getBalance());
+		}
 
 }

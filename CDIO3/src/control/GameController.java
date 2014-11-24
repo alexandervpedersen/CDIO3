@@ -17,28 +17,18 @@ public class GameController {
 	}
 	
 	public void createGame() {
-		GUIC.createText();
 		int num = GUIC.getNumOfPlayers();
 		players = new Player[num];
 		for (int i=1; i<=num; i++){
 			players[i-1] = new Player(GUIC.getPlayername(i));
 		}
-		for (int i=1; i<=num; i++){
-			GUIC.addPlayer(players[i-1]);
+		for (int i=0; i<=num-1; i++){
+			GUIC.addPlayer(players[i]);
 		}
 	}
 	
 	public void landOnField(Player player, int fieldnumber) {
-			if (board.needPayment(fieldnumber-1) == false) {
-				if (GUIC.checkWilling()) {
-					player.setWilling(true);
-					GUIC.setOwner(player, fieldnumber);
-				}
-				else 
-					player.resetWilling();
-			}
 			board.landOnField(fieldnumber-1, player);
-			player.resetWilling();
 	}
 	
 	public void runTurn(Player player) {
@@ -48,6 +38,7 @@ public class GameController {
 		player.movePlayer(box.getSum());
 		GUIC.movePlayer(player);
 		landOnField(player, player.getCurrentfield());
+		GUIC.updateBalance(player);
 	}
 	public boolean checkDeath(Player player) {
 		player.CheckDeath();

@@ -27,7 +27,10 @@ public class GUIController {
 		return name;
 	}
 	public void addPlayer(Player player){
-		GUI.addPlayer(player.getName(), player.getBalance());
+		int r = (int) Math.random()*255+1;
+		int g = (int) Math.random()*255+1;
+		int b = (int) Math.random()*255+1;
+		GUI.addPlayer(player.getName(), player.getBalance(), r,g,b);
 	}
 	public boolean checkWilling() {
 		return GUI.getUserLeftButtonPressed("This Field is not owned, do you wish to buy it?", "YES", "NO");
@@ -38,6 +41,10 @@ public class GUIController {
 	public void showDice(int dice1, int dice2) {
 		GUI.setDice(dice1, dice2);
 	}
+	public void updateBalance(Player player) {
+		GUI.setBalance(player.getName(), player.getBalance());
+	}
+	
 	public void movePlayer(Player player) {
 		GUI.removeAllCars(player.getName());
 		GUI.setCar(player.getCurrentfield(), player.getName());

@@ -1,5 +1,7 @@
 package fieldgame;
 
+import boundaryToMatador.GUI;
+
 public class Fleet extends Ownable {
 	private int rent_1 = 500;
 	private int rent_2 = 1000;
@@ -28,11 +30,21 @@ public class Fleet extends Ownable {
 	}
 	@Override
 	public void buyField(Player player) {
-		if (player.willing) {
+		if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it?", "YES", "NO")) {
 			owner = player;
 			isowned = true;
 			owner.addBalance(-price);
 			owner.addFleet();
+		}
+	}
+	@Override
+	public void landOnField(Player player) {
+		if (isowned == true) {
+			player.addBalance(-getRent());
+			owner.addBalance(getRent());
+		}
+		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it?", "YES", "NO")){
+			buyField(player);
 		}
 	}
 	

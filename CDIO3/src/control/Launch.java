@@ -11,7 +11,7 @@ public class Launch {
 		 * ingen bilfarver
 		 * 
 		 * meddelse ved betaling af eje
-		 * leje på brikker
+		 * 
 		 * ejer på brikker
 		 */
 		

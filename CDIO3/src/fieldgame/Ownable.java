@@ -43,6 +43,7 @@ public abstract class Ownable extends Field {
 	public void landOnField(Player player) {
 		if (isowned == true) {
 			player.addBalance(-getRent());
+			if (owner.getAlive() == true)
 			owner.addBalance(getRent());
 		}
 		else if (buyit){

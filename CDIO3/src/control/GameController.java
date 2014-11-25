@@ -38,7 +38,7 @@ public class GameController {
 				GUIC.setOwner(player);
 			}
 		}
-		if (board.isOwned(i) && board.getOwner(i)!=player)
+		if (board.isOwned(i) && board.getOwner(i)!=player && board.getOwner(i).getAlive())
 				GUIC.printTransaction(board.getName(i), board.getOwner(i), player);
 		}
 			board.landOnField(i, player);

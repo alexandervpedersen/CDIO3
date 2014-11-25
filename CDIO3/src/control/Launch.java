@@ -9,7 +9,7 @@ public class Launch {
 		/** 
 		 * fejl:
 		 * ingen bilfarver
-		 * mellemrum navn, has
+		 * 
 		 * meddelse ved betaling af eje
 		 * leje på brikker
 		 * ejer på brikker

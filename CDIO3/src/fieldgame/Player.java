@@ -71,7 +71,7 @@ public class Player {
 	}
 	
 	public String toString() {
-		return ("The player " + name + "has the " + account.toString());
+		return ("The player " + name + " has the " + account.toString());
 	}
 
 }

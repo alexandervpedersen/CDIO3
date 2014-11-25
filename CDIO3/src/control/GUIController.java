@@ -27,9 +27,9 @@ public class GUIController {
 		return name;
 	}
 	public void addPlayer(Player player){
-		int r = (int) Math.random()*200+1;
-		int g = (int) Math.random()*200+1;
-		int b = (int) Math.random()*200+1;
+		int r = (int) Math.random()*255+1;
+		int g = (int) Math.random()*255+1;
+		int b = (int) Math.random()*255+1;
 		GUI.addPlayer(player.getName(), player.getBalance(), r,g,b);
 	}
 	public boolean checkWilling() {

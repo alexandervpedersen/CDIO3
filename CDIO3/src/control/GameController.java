@@ -207,7 +207,9 @@ public class GameController {
 			for (int i=0; i<=players.length-1; i++) {
 				if (checkDeath(players[i]) == true) {
 				runTurn(players[i]);
-				checkWinner(i, players.length);
+				for (int o=0; i<=players.length-1; i++) {
+				if (checkWinner(o, players.length));
+				}
 				}
 				
 			}

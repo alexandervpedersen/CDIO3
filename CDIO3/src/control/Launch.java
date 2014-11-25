@@ -10,7 +10,7 @@ public class Launch {
 		 * fejl:
 		 * ingen bilfarver
 		 * 
-		 * meddelse ved betaling af eje
+		 * meddelse ved betaling af leje
 		 * 
 		 * ejer på brikker
 		 */

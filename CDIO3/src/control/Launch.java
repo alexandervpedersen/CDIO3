@@ -11,7 +11,9 @@ public class Launch {
 		 * ingen bilfarver
 		 * 
 		 */
-		
+		/**
+		 * spørger om buy, selvom feltet er ejet
+		 */
 
 	}
 

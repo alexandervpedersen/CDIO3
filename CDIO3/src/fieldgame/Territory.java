@@ -1,7 +1,5 @@
 package fieldgame;
 
-import boundaryToMatador.GUI;
-
 public class Territory extends Ownable {
 	private int rent;
 	boolean buyit = false;
@@ -12,17 +10,6 @@ public class Territory extends Ownable {
 	public Territory(String name, int rent, int price) {
 		super(name, price);
 		this.rent = rent;
-	}
-	@Override
-	public void landOnField(Player player) {
-		if (isowned == true) {
-			player.addBalance(-getRent());
-			owner.addBalance(getRent());
-		}
-		else if (buyit){
-			buyField(player);
-			buyit = false;
-		}
 	}
 	@Override
 	public void buyField(Player player) {

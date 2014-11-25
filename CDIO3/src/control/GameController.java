@@ -60,7 +60,7 @@ public class GameController {
 		player.CheckDeath();
 		return player.getAlive();
 	}
-	public boolean checkWinner(int playernumber, int numofplayers) {
+	public boolean checkWinner(int playernumber, int numofplayers, Player[] players) {
 		switch (numofplayers) {
 		case 2:
 			if (playernumber == 0) {
@@ -208,7 +208,7 @@ public class GameController {
 				if (checkDeath(players[i]) == true) {
 				runTurn(players[i]);
 				for (int o=0; i<=players.length-1; i++) {
-				if (checkWinner(o, players.length));
+				if (checkWinner(o, players.length, players));
 				}
 				}
 				

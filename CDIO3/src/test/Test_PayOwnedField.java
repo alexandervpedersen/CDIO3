@@ -18,7 +18,7 @@ public class Test_PayOwnedField { //Fejl i owned, da man bliver spurgt om køb 2 
 				GameBoard gameboard = new GameBoard();
 				
 			//Test
-				//Simulerer at spilleren lander på feltet 1.
+				//Simulerer at spilleren lander på feltet 5.
 					gameboard.landOnField(5, player1);
 			
 			//Postconditions
@@ -34,20 +34,24 @@ public class Test_PayOwnedField { //Fejl i owned, da man bliver spurgt om køb 2 
 			public void test7(){
 			//Preconditions
 				// Opretter helholdsvis player og gameboardet, account indholder en balance.
+				GameBoard gameboard = new GameBoard();
 				Player player1 = new Player("TestPerson1");
 				Player player2 = new Player("TestPerson2");
-				GameBoard gameboard = new GameBoard();
 				
 			//Test
-				//Simulerer at spilleren lander på feltet 1.
+				//Simulerer at spilleren lander på feltet 5.
 					gameboard.landOnField(5, player1);
 					gameboard.landOnField(5, player2);
 			
 			//Postconditions
+				//Tjekker at spiller 1 har en fleet.
 				assertEquals(1,player1.getFleetammount());
-				assertEquals(1,player2.getBalance());
-				assertEquals(1,player2.getFleetammount());
-				System.out.println(player2.getBalance());
+				//Tjekker at spiller 2 har en balance på 29500 efter at have landet på feltet.
+				assertEquals(29500,player2.getBalance());
+				//Sikrer os at spiller 2 ikke har fået en fleet på feltet.
+				assertEquals(0,player2.getFleetammount());
+				//Tjekker at spiller 1 har fået penge fra spiller 2 (500).
+				assertEquals(26500,player1.getBalance());
 			}
 
 }

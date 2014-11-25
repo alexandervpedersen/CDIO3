@@ -17,9 +17,14 @@ public abstract class Field {
 	}
 	public abstract void landOnField(Player player);
 	public abstract int getRent();
-	public boolean needPayment() {
-		return true;
+	public boolean isOwned() {
+		return false;
 	}
 	public void passStart(Player player) {
+	}
+	public void setBuy(boolean b) {
+	}
+	public Player getOwner() {
+		return null;
 	}
 }

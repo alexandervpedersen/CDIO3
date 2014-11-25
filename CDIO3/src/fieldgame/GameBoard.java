@@ -40,7 +40,7 @@ public class GameBoard {
 		return board[fieldnumber].getRent();
 	}
 	public boolean needPayment(int fieldnumber) {
-		return board[fieldnumber].needPayment();
+		return board[fieldnumber].isOwned();
 	}
 	public void passStart(Player player) {
 			board[0].passStart(player);
@@ -52,6 +52,16 @@ public class GameBoard {
 			out += board[i-1].toString()+"\n";
 		}
 		return out;
+	}
+	public void buy(int fieldnumber) {
+		board[fieldnumber].setBuy(true);
+	}
+	public Player getOwner(int fieldnumber) {
+		return board[fieldnumber].getOwner();
+		
+	}
+	public boolean isOwned(int fieldnumber) {
+		return board[fieldnumber].isOwned();
 	}
 	
 

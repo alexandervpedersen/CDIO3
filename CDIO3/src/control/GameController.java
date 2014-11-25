@@ -29,7 +29,19 @@ public class GameController {
 	}
 	
 	public void landOnField(Player player, int fieldnumber) {
-			board.landOnField(fieldnumber-1, player);
+		int i = fieldnumber -1;
+		if (i!=0 || i!=4 || i!=13 || i!=17 || i!=19) {
+			if (board.isOwned(i)==false) {
+			boolean buy = GUIC.checkWilling();
+			if (buy) {
+				board.buy(i);
+				GUIC.setOwner(player);
+			}
+		}
+		if (board.isOwned(i) && board.getOwner(i)!=player)
+				GUIC.printTransaction(board.getName(i), board.getOwner(i), player);
+		}
+			board.landOnField(i, player);
 	}
 	
 	public void runTurn(Player player) {

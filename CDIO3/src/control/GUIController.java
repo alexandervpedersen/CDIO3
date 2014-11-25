@@ -21,9 +21,6 @@ public class GUIController {
 	public void createPath() {
 		GUI.create("fieldsfx.txt");
 	}
-	public void setOwner(Player player) {
-		GUI.setOwner(player.getCurrentfield(), player.getName());
-	}
 	
 	public String getPlayername(int playernumber) {
 		String name = JOptionPane.showInputDialog("Enter name of player " +playernumber);
@@ -52,14 +49,16 @@ public class GUIController {
 		GUI.removeAllCars(player.getName());
 		GUI.setCar(player.getCurrentfield(), player.getName());
 	}
-	public void setOwner(Player player, int fieldnumber) {
-		GUI.setOwner(fieldnumber, player.getName());
+	public void setOwner(Player player) {
+		GUI.setOwner(player.getCurrentfield(), player.getName());
 	}
 	public void removePlayer(Player player) {
 		GUI.removeAllCars(player.getName());
 	}
 	public void printWinner(Player player) {
-		GUI.showMessage("Congratulations"+player.getName()+", you won the game!");
+		GUI.showMessage("Congratulations "+player.getName()+", you won the game!");
 	}
-	
+	public void printTransaction(String fieldname, Player owner, Player payer) {
+		GUI.showMessage("The field "+fieldname+" is owned by "+owner.getName()+", \n"+payer.getName()+" paid the rent to "+owner.getName());
+	}
 }

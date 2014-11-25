@@ -1,11 +1,10 @@
 package fieldgame;
 
-import boundaryToMatador.GUI;
-
 public abstract class Ownable extends Field {
 	protected int price;
 	protected Player owner;
 	protected boolean isowned = false;
+	protected boolean buyit;
 	
 	public Ownable() {
 		super();
@@ -46,17 +45,24 @@ public abstract class Ownable extends Field {
 			player.addBalance(-getRent());
 			owner.addBalance(getRent());
 		}
-		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it?", "YES", "NO")){
+		else if (buyit){
 			buyField(player);
+			buyit = false;
 		}
 	}
 	
 	public abstract int getRent();
 	
 	@Override
-	public boolean needPayment() {
+	public boolean isOwned() {
 		return isowned;	
 	}
 	public void landOnField(Player player, int boxsum) {
+	}
+	public boolean getBuy() {
+		return buyit;
+	}
+	public void setBuy(boolean buyit) {
+		this.buyit = buyit;
 	}
 }

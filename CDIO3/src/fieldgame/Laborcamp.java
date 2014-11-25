@@ -1,7 +1,5 @@
 package fieldgame;
 
-import boundaryToMatador.GUI;
-
 public class Laborcamp extends Ownable {
 	private int baserent = 100;
 	
@@ -21,7 +19,7 @@ public class Laborcamp extends Ownable {
 			player.addBalance(-getRent(boxsum));
 			owner.addBalance(getRent(boxsum));
 		}
-		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it? "+player.getName(), "YES", "NO")){
+		else if (buyit){
 			buyField(player);
 		}
 	}

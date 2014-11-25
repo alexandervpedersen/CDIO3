@@ -14,7 +14,9 @@ public class Launch {
 		 * 
 		 * ejer på brikker
 		 */
-		
+		/**
+		 * spÃ¸rger om buy, selvom feltet er ejet
+		 */
 
 	}
 

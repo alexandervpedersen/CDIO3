@@ -61,10 +61,9 @@ public class Player {
 		account.addBalance(add);
 	}
 	
-	public boolean CheckDeath(){
+	public void CheckDeath(){
 		if (account.CheckDeath() == true)
 			isAlive = false;
-		return isAlive;
 	}
 	public boolean getAlive() {
 		return isAlive;

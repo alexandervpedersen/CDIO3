@@ -4,6 +4,7 @@ import boundaryToMatador.GUI;
 
 public class Territory extends Ownable {
 	private int rent;
+	boolean buyit = false;
 	
 	public Territory() {
 		super();
@@ -18,8 +19,9 @@ public class Territory extends Ownable {
 			player.addBalance(-getRent());
 			owner.addBalance(getRent());
 		}
-		else if (GUI.getUserLeftButtonPressed("This tile is not owned, do you want to buy it? "+player.getName(), "YES", "NO")){
+		else if (buyit){
 			buyField(player);
+			buyit = false;
 		}
 	}
 	@Override

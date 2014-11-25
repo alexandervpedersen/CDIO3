@@ -10,6 +10,9 @@ public class Launch {
 		 * fejl:
 		 * ingen bilfarver
 		 * 
+		 * meddelse ved betaling af leje
+		 * 
+		 * ejer på brikker
 		 */
 		/**
 		 * spÃ¸rger om buy, selvom feltet er ejet

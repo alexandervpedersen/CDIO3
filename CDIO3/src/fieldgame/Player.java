@@ -62,8 +62,9 @@ public class Player {
 	}
 	
 	public void CheckDeath(){
-		if (account.CheckDeath() == true)
+		if (account.CheckDeath() == true) {
 			isAlive = false;
+		}
 	}
 	public boolean getAlive() {
 		return isAlive;

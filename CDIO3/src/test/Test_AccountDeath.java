@@ -18,9 +18,11 @@ public class Test_AccountDeath {
 		
 		//Fjerner 30000 fra pengebeholdning, da man starter med 30.000
 		player.addBalance(-30000);
+		System.out.println(player.getBalance());
+		player.CheckDeath();
 		
 	//Postconditions
-		assertEquals(player.CheckDeath(),true);
+		assertEquals(false,player.getAlive());
 		//Bruger JUnit til at udføre test case
 	}
 

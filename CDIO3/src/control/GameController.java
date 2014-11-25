@@ -39,7 +39,9 @@ public class GameController {
 			}
 		}
 		if (board.isOwned(i) && board.getOwner(i)!=player && board.getOwner(i).getAlive())
-				GUIC.printTransaction(board.getName(i), board.getOwner(i), player);
+			GUIC.printTransaction1(board.getName(i), board.getOwner(i), player);
+		if (board.isOwned(i) && board.getOwner(i)!=player && board.getOwner(i).getAlive()==false)
+			GUIC.printTransaction2(board.getName(i), board.getOwner(i), player);
 		}
 			board.landOnField(i, player);
 	}

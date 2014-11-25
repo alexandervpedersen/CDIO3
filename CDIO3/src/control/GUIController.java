@@ -58,7 +58,10 @@ public class GUIController {
 	public void printWinner(Player player) {
 		GUI.showMessage("Congratulations "+player.getName()+", you won the game!");
 	}
-	public void printTransaction(String fieldname, Player owner, Player payer) {
+	public void printTransaction1(String fieldname, Player owner, Player payer) {
 		GUI.showMessage("The field "+fieldname+" is owned by "+owner.getName()+", \n"+payer.getName()+" paid the rent to "+owner.getName());
+	}
+	public void printTransaction2(String fieldname,Player owner, Player payer) {
+		GUI.showMessage("The field "+fieldname+" is owned by "+owner.getName()+"'s children \n"+payer.getName()+" paid the rent to "+owner.getName()+"'s children");
 	}
 }

@@ -18,8 +18,11 @@ public class GUIController {
 		}
 		return n;
 	}
-	public void createText() {
+	public void createPath() {
 		GUI.create("fieldsfx.txt");
+	}
+	public void setOwner(Player player) {
+		GUI.setOwner(player.getCurrentfield(), player.getName());
 	}
 	
 	public String getPlayername(int playernumber) {

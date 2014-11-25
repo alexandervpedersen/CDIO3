@@ -2,174 +2,157 @@
 	backgroundColor::255,,0,,0;;
 	foregroundColor::0,,0,,0;;
 	title::START;; 
-	subText:: ;; 
-	description:: ;;
+	subText::Start;; 
+	description::Start;;
 ||		
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
 	title::Tribe Encampment;; 
-	subText::1000;; 
-	description::Rent: 100;;
-	leje::100;;	
-	
+	subText::Price:	1000;; 
+	description::Territory \n Tribe Encampment;;
+	leje::Rent: 100;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
 	title::Crater;; 
-	subText::1500;; 
-	description::Rent: 300;;
-	leje::300;;
+	subText::Price:	1500;; 
+	description::Territory  \n  Crater;;
+	leje::Rent: 300;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
 	title::Mountain;; 
-	subText::2000;; 
-	description::Rent: 500;;
-	leje::500;;
+	subText::Price:	2000;; 
+	description::Territory  \n  Mountain;;
+	leje::Rent: 500;;
+||	
+	type::Tax;;
+	title::Caravan;; 
+	subText::Pay 4000 or 10% of total assets;; 
+	description::Tax  \n  Pay 4000 or 10% of total assets;;
+||	
+	type::Shipping;;
+	picture::Default;;
+	title::Second Sail;; 
+	subText::Price:  4000;; 
+	description::Fleet  \n  Second Sail;;
+	leje::Rent: 500 multiplied by fleets owned;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
-	foregroundColor::0,,0,,0;;
-	title::Caravan;; 
-	subText::4000;; 
-	description::;;
-	leje:: ;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Second Sail;; 
-	subText::4000;; 
-	description::Rent: 500, 1000, 2000, 4000;;
-	leje:: ;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
 	foregroundColor::0,,0,,0;;
 	title::Cold Desert;; 
-	subText::3000;; 
-	description::Rent: 700;;
-	leje::700;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Black Cave;; 
-	subText::4000;; 
-	description::Rent: 1000;;
-	leje::1000;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::The Werewall;; 
-	subText::4300;; 
-	description::Rent: 1300;;
-	leje::1300;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Huts in the mountain;; 
-	subText::2500;; 
-	description::Rent: 100 x Dice;;
-	leje:: ;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Sea Grover;; 
-	subText::4000;; 
-	description::Rent: 500, 1000, 2000, 4000;;
-	leje:: ;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Mountain Village;; 
-	subText::4750;; 
-	description::Rent: 1600;;
-	leje::1600;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::South Citadel;; 
-	subText::5000;; 
-	description::Rent: 2000;;
-	leje::2000;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Monastary;; 
-	subText::+500;; 
-	description::;;
-	leje::;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::The Pit;; 
-	subText::2500;; 
-	description::Rent: 100 x Dice;;
-	leje::;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::The Buccaneers;; 
-	subText::4000;; 
-	description::Rent: 500, 1000, 2000, 4000;;
-	leje::;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Palace Gates;; 
-	subText::5500;; 
-	description::Rent: 2600;;
-	leje::2600;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Walled City;; 
-	subText::+5000;; 
-	description::;;
-	leje::;;
-||	
-	type::Street;;
-	backgroundColor::255,,135,,120;;
-	foregroundColor::0,,0,,0;;
-	title::Tower;; 
-	subText::6000;; 
-	description::Rent: 3200;;
-	leje::3200;;
+	subText::Price:	3000;; 
+	description::Territory \n Cold Desert;;
+	leje::Rent: 700;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Goldmine;; 
-	subText::2000;; 
-	description::Pay 2000, or 10% of your total assets;;
-	leje::;;
+	title::Black Cave;; 
+	subText::Price:	4000;; 
+	description::Territory \n Black Cave;;
+	leje::Rent: 1000;;
 ||	
 	type::Street;;
-	backgroundColor::255,,135,,120;;
+	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Privateer Armade;; 
-	subText::4000;; 
-	description::Rent: 500, 1000, 2000, 4000;;
-	leje::;;
+	title::The Werewall;; 
+	subText::Price:	4300;; 
+	description::Territory \n The Werewall;;
+	leje::Rent: 1300;;
+||	
+	type::Brewery;;
+	picture::Default;;
+	title::Huts in the Mountain;; 
+	subText::Price:  2500;; 
+	description::Labor Camp  \n  Huts in the Mountain;;
+	leje::Rent: 10 x [Dive Value];;
+||	
+	type::Shipping;;
+	picture::Default;;
+	title::Sea Grover;; 
+	subText::Price:  4000;; 
+	description::Fleet  \n  Sea Grover;;
+	leje::Rent: 500 multiplied by fleets owned;;
 ||	
 	type::Street;;
-	backgroundColor::255,,135,,120;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Mountain Village;; 
+	subText::Price:	4750;; 
+	description::Territory \n Mountain Village;;
+	leje::Rent: 1600;;
+||	
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::South Citadel;; 
+	subText::Price:	5000;; 
+	description::Territory \n South Citadel;;
+	leje::Rent: 2000;;
+||	
+	type::Refuge;;
+	picture::Default;;
+	title::Monastery;; 
+	subText::Recieve 500;; 
+	description::Regufe  \n  Monastery  \n  Recieve 500;;
+||	
+	type::Brewery;;
+	picture::Default;;
+	title::The Pit;; 
+	subText::Price:  2500;; 
+	description::LaborCamp  \n  The Pit;;
+	leje::Rent: 10 x [Dive Value];;	
+||	
+	type::Shipping;;
+	picture::Default;;
+	title::The Buccaneers;; 
+	subText::Price:  4000;; 
+	description::Fleet  \n  Buccaneers;;
+	leje::Rent: 500 multiplied by fleets owned;;
+||	
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Palace Gates;; 
+	subText::Price:	5500;; 
+	description::Territory \n Palace Gates;;
+	leje::Rent: 2600;;
+||	
+	type::Refuge;;
+	picture::Default;;
+	title::Walled City;; 
+	subText::Recieve 5000;; 
+	description::Refuge  \n  Walled City  \n  Recieve 5000;;
+||	
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Tower;; 
+	subText::Price:	6000;; 
+	description::Territory   \n   Tower;;
+	leje::Rent: 3200;;
+||	
+	type::Tax;;
+	title::Goldmine;; 
+	subText::Pay 2000;; 
+	description::Tax  \n  Pay 2000;;
+||
+	type::Shipping;;
+	picture::Default;;
+	title::Privateer Armada;; 
+	subText::Price:  4000;; 
+	description::Fleet  \n  Privateer Armada;;
+	leje::Rent: 500 multiplied by fleets owned;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
 	title::Castle;; 
-	subText::8000;; 
-	description::Rent: 4000;;
-	leje::4000;;
+	subText::Price:	8000;; 
+	description::Territory  \n  Castle;;
+	leje::Rent: 4000;;

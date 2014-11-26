@@ -24,7 +24,7 @@ public class GameController {
 			players[i-1] = new Player(GUIC.getPlayername(i));
 		}
 		for (int i=0; i<=num-1; i++){
-			GUIC.addPlayer(players[i]);
+			GUIC.addPlayer(players[i], i+1);
 		}
 	}
 	
@@ -56,11 +56,12 @@ public class GameController {
 		for (int i=0; i<=players.length-1; i++)
 		GUIC.updateBalance(players[i]);
 	}
-	public boolean checkDeath(Player player) {
+	public boolean checkAlive(Player player) {
 		player.CheckDeath();
 		return player.getAlive();
 	}
-	public boolean checkWinner(int playernumber, int numofplayers, Player[] players) {
+	public boolean checkWinner(int playernumber, Player[] players) {
+		int numofplayers=players.length;
 		switch (numofplayers) {
 		case 2:
 			if (playernumber == 0) {
@@ -205,18 +206,19 @@ public class GameController {
 	public void runGame() {
 		while (run) {
 			for (int i=0; i<=players.length-1; i++) {
-				if (checkDeath(players[i]) == true) {
+				for (int o=0; o<players.length; o++) {
+					players[o].CheckDeath();
+				}
+				if (checkAlive(players[i]) == true) {
 				runTurn(players[i]);
-				for (int o=0; i<=players.length-1; i++) {
-				if (checkWinner(o, players.length, players));
 				}
-				}
-				
+				if (checkWinner(i, players))
+					run = false;
 			}
 		}
 	}
 	public void showWinner() {
-		for (int i=0; i <= players.length; i++)
+		for (int i=0; i <= players.length-1; i++)
 		if (players[1].getAlive())
 			GUIC.printWinner(players[i]);
 

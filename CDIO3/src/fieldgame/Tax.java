@@ -20,8 +20,8 @@ public class Tax extends Field{
 		this.taxAmmount = taxAmmount;
 	}
 	
-	public void isUserWilling(){
-		this.willing = GUI.getUserLeftButtonPressed("Vil du betale 10% af din pengebeholdning, eller 4000?", "10%", "4000");
+	public boolean isUserWilling(){
+		return GUI.getUserLeftButtonPressed("Vil du betale 10% af din pengebeholdning, eller 4000?", "10%", "4000");
 	}
 	
 	@Override
@@ -30,8 +30,7 @@ public class Tax extends Field{
 					player.addBalance(-taxAmmount);
 		}
 		else {
-			isUserWilling();
-			if (willing == true){
+			if (isUserWilling()){
 			int i = player.getBalance() / 10;
 			player.addBalance(-i);
 			}else

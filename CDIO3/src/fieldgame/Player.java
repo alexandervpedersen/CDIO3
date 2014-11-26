@@ -47,10 +47,7 @@ public class Player {
 	}
 	
 	public int getBalance() {
-		if (isAlive == false)
-			return 0;
-		else 
-			return account.getBalance();
+		return account.getBalance();
 	}
 	
 	public void setBalance(int new_balance) {

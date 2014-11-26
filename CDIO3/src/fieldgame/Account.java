@@ -22,9 +22,6 @@ public class Account {
 	}
 	
 	public void addBalance(int add) {
-		if (balance < 0)
-			this.balance = add;
-		else
 			this.balance = balance + add;
 	}
 	

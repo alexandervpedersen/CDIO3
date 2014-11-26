@@ -1,6 +1,7 @@
 package control;
 import boundaryToMatador.GUI;
 import javax.swing.JOptionPane;
+
 import fieldgame.Player;
 
 public class GUIController {
@@ -26,11 +27,19 @@ public class GUIController {
 		String name = JOptionPane.showInputDialog("Enter name of player " +playernumber);
 		return name;
 	}
-	public void addPlayer(Player player){
-		int r = (int) Math.random()*255+1;
-		int g = (int) Math.random()*255+1;
-		int b = (int) Math.random()*255+1;
-		GUI.addPlayer(player.getName(), player.getBalance(), r,g,b);
+	public void addPlayer(Player player, int playernumber){
+		if (playernumber == 1)
+			GUI.addPlayer(player.getName(), player.getBalance(), 255, 0, 0);
+		if (playernumber == 2)
+			GUI.addPlayer(player.getName(), player.getBalance(), 0, 255, 0);
+		if (playernumber == 3)
+			GUI.addPlayer(player.getName(), player.getBalance(), 0, 0, 255);
+		if (playernumber == 4)
+			GUI.addPlayer(player.getName(), player.getBalance(), 255, 255, 0);
+		if (playernumber == 5)
+			GUI.addPlayer(player.getName(), player.getBalance(), 0, 0, 0);
+		if (playernumber == 6)
+			GUI.addPlayer(player.getName(), player.getBalance(), 255, 255, 255);
 	}
 	public boolean checkWilling() {
 		return GUI.getUserLeftButtonPressed("This Field is not owned, do you wish to buy it?", "YES", "NO");

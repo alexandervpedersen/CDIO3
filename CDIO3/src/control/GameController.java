@@ -30,7 +30,7 @@ public class GameController {
 	
 	public void landOnField(Player player, int fieldnumber) {
 		int i = fieldnumber -1;
-		if (i!=0 || i!=4 || i!=13 || i!=17 || i!=19) {
+		if (i!=0 && i!=4 && i!=13 && i!=17 && i!=19) {
 			if (board.isOwned(i)==false) {
 			boolean buy = GUIC.checkWilling();
 			if (buy) {
@@ -208,6 +208,8 @@ public class GameController {
 			for (int i=0; i<=players.length-1; i++) {
 				for (int o=0; o<players.length; o++) {
 					players[o].CheckDeath();
+					if (checkAlive(players[o])==false)
+						GUIC.removePlayer(players[o]);
 				}
 				if (checkAlive(players[i]) == true) {
 				runTurn(players[i]);

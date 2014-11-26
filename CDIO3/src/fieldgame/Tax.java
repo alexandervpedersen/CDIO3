@@ -4,7 +4,6 @@ import boundaryToMatador.GUI;
 
 public class Tax extends Field{
 	private int taxAmmount;
-	private boolean willing = true;
 	
 	public Tax() {
 		super();

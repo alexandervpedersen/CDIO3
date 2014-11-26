@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public abstract class Field {
 	protected String name;

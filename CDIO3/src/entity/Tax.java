@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 import boundaryToMatador.GUI;
 

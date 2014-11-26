@@ -1,7 +1,8 @@
 package test;
-import fieldgame.Player;
+import entity.Player;
 import control.GameController;
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 public class Test_CheckWin {
 

@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public class Refuge extends Field {
 	private int bonus;

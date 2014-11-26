@@ -1,5 +1,5 @@
 package test;
-import fieldgame.GameBoard;
+import entity.GameBoard;
 public class Test_main_Boardlist {
 
 	public static void main(String[] args) {

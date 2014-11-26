@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public class Laborcamp extends Ownable {
 	private int baserent = 100;

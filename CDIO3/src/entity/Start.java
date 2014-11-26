@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public class Start extends Field {
 	private int income = 4000;

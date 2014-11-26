@@ -1,5 +1,5 @@
 package test;
-import fieldgame.Player;
+import entity.Player;
 import static org.junit.Assert.*;
 
 import org.junit.Test;

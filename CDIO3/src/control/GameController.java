@@ -1,7 +1,7 @@
 package control;
-import fieldgame.Player;
-import fieldgame.GameBoard;
-import fieldgame.Dicebox;
+import entity.Dicebox;
+import entity.GameBoard;
+import entity.Player;
 
 public class GameController {
 	GUIController GUIC = new GUIController();

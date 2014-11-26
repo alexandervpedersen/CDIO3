@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public class GameBoard {
 	Field board[] = new Field[22];

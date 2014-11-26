@@ -1,8 +1,9 @@
 package control;
 import boundaryToMatador.GUI;
+
 import javax.swing.JOptionPane;
 
-import fieldgame.Player;
+import entity.Player;
 
 public class GUIController {
 

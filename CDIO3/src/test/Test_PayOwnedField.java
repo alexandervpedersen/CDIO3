@@ -1,8 +1,9 @@
 package test;
 
 import static org.junit.Assert.*;
-import fieldgame.GameBoard;
-import fieldgame.Player;
+import entity.GameBoard;
+import entity.Player;
+
 import org.junit.Test;
 
 

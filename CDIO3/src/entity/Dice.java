@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public class Dice {
 	private int dice;

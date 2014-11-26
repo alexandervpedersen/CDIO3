@@ -1,4 +1,4 @@
-package fieldgame;
+package entity;
 
 public class Fleet extends Ownable {
 	private int rent_1 = 500;

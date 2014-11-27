@@ -24,7 +24,7 @@ public class Test_CheckWin {
 		
 		System.out.println(playerarray[0].getBalance());
 		
-		// Kander min public void som til at tjekke efter døde.
+		// Kalder min public void som til at tjekke efter dï¿½de.
 		playerarray[0].CheckDeath();
 		playerarray[1].CheckDeath();
 		

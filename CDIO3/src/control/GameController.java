@@ -63,10 +63,10 @@ public class GameController {
 	public boolean checkWinner(Player[] players) {
 		int i =0;
 		for(int p=0; p<players.length; p++) {
-			if (players[0].getAlive()==false)
+			if (players[p].getAlive()==false)
 				i++;
 		}
-		if (players.length==i)
+		if (i-1==players.length)
 			return true;
 		else
 			return false;

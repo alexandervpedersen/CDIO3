@@ -8,7 +8,7 @@ public class Launch {
 		control.init();
 		/** 
 		 * fejl:
-		 * ingen bilfarver
+		 * TAX HAR GUI KONTAKT
 		 * 
 		 * 
 		 */

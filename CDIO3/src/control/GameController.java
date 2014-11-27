@@ -66,7 +66,7 @@ public class GameController {
 			if (players[0].getAlive()==false)
 				i++;
 		}
-		if (players.length==i-1)
+		if (players.length==i)
 			return true;
 		else
 			return false;

@@ -32,6 +32,7 @@ public class Test_CheckWin {
 		assertEquals(false,playerarray[0].getAlive());
 		assertEquals(false,playerarray[1].getAlive());
 		assertEquals(true,playerarray[2].getAlive());
+		assertEquals(true, gamecontroller.checkWinner(playerarray));
 		
 		
 	}

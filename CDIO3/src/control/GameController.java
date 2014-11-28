@@ -66,7 +66,7 @@ public class GameController {
 			if (players[p].getAlive()==false)
 				i++;
 		}
-		if (i-1==players.length)
+		if (i==players.length-1)
 			return true;
 		else
 			return false;
@@ -82,9 +82,11 @@ public class GameController {
 				}
 				if (checkAlive(players[i]) == true) {
 				runTurn(players[i]);
-				}
-				if (checkWinner(players))
+				if (checkWinner(players)) {
 					run = false;
+					i = 100;
+				}	
+				}
 			}
 		}
 	}

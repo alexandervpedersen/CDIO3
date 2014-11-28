@@ -1,10 +1,10 @@
 package entity;
 
 public class Start extends Field {
-	private int income = 4000;
+	private int income = 0;
 	
 	public Start() {
-		income = 4000;
+		income = 0;
 	}
 	public Start(String name){
 		super(name);

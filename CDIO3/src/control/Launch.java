@@ -10,8 +10,7 @@ public class Launch {
 		 * fejl:
 		 * TAX HAR GUI KONTAKT
 		 * 
-		 * Det er en løsning til et problem.. ikke en fejl.
-		 * Sebastian
+		 * 
 		 */
 
 	}

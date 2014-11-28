@@ -20,13 +20,6 @@ public abstract class Field {
 	public boolean isOwned() {
 		return false;
 	}
-	/**
-	 * Denne metode bruges kun til LaborCamp og 
-	 * er en løsning til at få dicesum ned i feltet
-	 * @param player on field
-	 * @param sum of dice
-	 */
-	public abstract void landOnField (Player player, int sum);
 	public void passStart(Player player) {
 	}
 	public void setBuy(boolean b) {

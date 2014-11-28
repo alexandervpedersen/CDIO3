@@ -43,7 +43,7 @@ public class GameController {
 		if (board.isOwned(i) && board.getOwner(i)!=player && board.getOwner(i).getAlive()==false)
 			GUIC.printTransaction2(board.getName(i), board.getOwner(i), player);
 		}
-			board.landOnField(i, player, box.getSum());
+			board.landOnField(i, player);
 	}
 	
 	public void runTurn(Player player) {

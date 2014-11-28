@@ -42,10 +42,4 @@ public class Refuge extends Field {
 	public String toString() {
 		return name+": Type[Refuge] [bonus=" + bonus + "]";
 	}
-
-	@Override
-	public void landOnField(Player player, int sum) {
-		// TODO Auto-generated method stub
-		
-	}
 }

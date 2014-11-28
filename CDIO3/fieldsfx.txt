@@ -39,7 +39,7 @@
 	title::Second Sail;; 
 	subText::Price:  4000;; 
 	description::Fleet  \n  Second Sail  \n  Rent: 500 x fleets owned;;
-	leje::Rent: 500 multiplied by fleets owned;;
+	leje:: ;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
@@ -77,7 +77,7 @@
 	title::Sea Grover;; 
 	subText::Price:  4000;; 
 	description::Fleet  \n  Sea Grover  \n  Rent: 500 x fleets owned;;
-	leje::Rent: 500 multiplied by fleets owned;;
+	leje:: ;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
@@ -113,7 +113,7 @@
 	title::The Buccaneers;; 
 	subText::Price:  4000;; 
 	description::Fleet  \n  Buccaneers  \n  Rent: 500 x fleets owned;;
-	leje::Rent: 500 multiplied by fleets owned;;
+	leje:: ;;
 ||	
 	type::Street;;
 	backgroundColor::75,,155,,225;;
@@ -147,7 +147,7 @@
 	title::Privateer Armada;; 
 	subText::Price:  4000;; 
 	description::Fleet  \n  Privateer Armada  \n  Rent: 500 x fleets owned;;
-	leje::Rent: 500 multiplied by fleets owned;;
+	leje:: ;;
 ||
 	type::Street;;
 	backgroundColor::75,,155,,225;;

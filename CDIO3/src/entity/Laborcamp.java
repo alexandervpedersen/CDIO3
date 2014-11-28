@@ -14,10 +14,25 @@ public class Laborcamp extends Ownable {
 		return rent;
 	}
 	@Override
+	/**
+	 * Denne metode bruger boxsum i Laborcamp
+	 * 
+	 */
 	public void landOnField(Player player, int boxsum) {
 		if (isowned == true) {
 			player.addBalance(-getRent(boxsum));
 			owner.addBalance(getRent(boxsum));
+		}
+		else if (buyit){
+			buyField(player);
+		}
+	}
+	@Override
+	
+	public void landOnField(Player player) {
+		if (isowned == true) {
+			player.addBalance(-getRent());
+			owner.addBalance(getRent());
 		}
 		else if (buyit){
 			buyField(player);

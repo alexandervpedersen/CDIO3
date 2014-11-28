@@ -45,6 +45,11 @@ public class Tax extends Field{
 	public String toString() {
 		return name+": Type[Tax] [taxAmmount=" + taxAmmount + "]";
 	}
+	@Override
+	public void landOnField(Player player, int sum) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

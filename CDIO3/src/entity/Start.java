@@ -41,6 +41,11 @@ public class Start extends Field {
 	public String toString() {
 		return name+": Type[Start] [income=" + income + "]";
 	}
+	@Override
+	public void landOnField(Player player, int sum) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

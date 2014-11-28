@@ -1,10 +1,10 @@
 package entity;
 
 public class Fleet extends Ownable {
-	private int rent_1 = 500;
-	private int rent_2 = 1000;
-	private int rent_3 = 2000;
-	private int rent_4 = 4000;
+	private int rent_1 = 250;
+	private int rent_2 = 500;
+	private int rent_3 = 1000;
+	private int rent_4 = 2000;
 	
 	public Fleet() {
 		super();

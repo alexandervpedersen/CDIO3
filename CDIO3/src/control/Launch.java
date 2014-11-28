@@ -9,7 +9,8 @@ public class Launch {
 		/** 
 		 * fejl:
 		 * TAX HAR GUI KONTAKT
-		 * 
+		 * det er en løsning, hilsen seb
+		 * labor camps duer ik.... ingen udveksling af penge nå man lander på den
 		 * 
 		 */
 

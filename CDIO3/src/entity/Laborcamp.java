@@ -2,6 +2,7 @@ package entity;
 
 public class Laborcamp extends Ownable {
 	private int baserent = 100;
+	private int boxsum;
 	
 	public Laborcamp() {
 		super();
@@ -14,7 +15,7 @@ public class Laborcamp extends Ownable {
 		return rent;
 	}
 	@Override
-	public void landOnField(Player player, int boxsum) {
+	public void landOnField(Player player) {
 		if (isowned == true) {
 			player.addBalance(-getRent(boxsum));
 			owner.addBalance(getRent(boxsum));
@@ -39,6 +40,12 @@ public class Laborcamp extends Ownable {
 	@Override
 	public int getRent() {
 		return 0;
+	}
+	public int getBoxsum() {
+		return boxsum;
+	}
+	public void setBoxsum(int boxsum) {
+		this.boxsum = boxsum;
 	}
 	
 }

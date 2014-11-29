@@ -26,10 +26,6 @@ public abstract class Ownable extends Field {
 		isowned = true;
 		owner.addBalance(-price);
 	}
-	public String getOwnerName() {
-		return owner.getName();
-	}
-	
 	public Player getOwner() {
 		return owner;
 	}
@@ -57,8 +53,6 @@ public abstract class Ownable extends Field {
 	@Override
 	public boolean isOwned() {
 		return isowned;	
-	}
-	public void landOnField(Player player, int boxsum) {
 	}
 	public boolean getBuy() {
 		return buyit;

@@ -23,6 +23,9 @@ public class GUIController {
 	public void createPath() {
 		GUI.create("fieldsfx.txt");
 	}
+	public boolean askTax() {
+		return GUI.getUserLeftButtonPressed("Do you want to pay 10% of your assets, or 4000?", "10%", "4000");
+	}
 	
 	public String getPlayername(int playernumber) {
 		String name = JOptionPane.showInputDialog("Enter name of player " +playernumber);

@@ -1,10 +1,10 @@
 package entity;
 
 public class Fleet extends Ownable {
-	private int rent_1 = 250;
-	private int rent_2 = 500;
-	private int rent_3 = 1000;
-	private int rent_4 = 2000;
+	private int rent_1 = 500;
+	private int rent_2 = 1000;
+	private int rent_3 = 2000;
+	private int rent_4 = 4000;
 	
 	public Fleet() {
 		super();
@@ -29,20 +29,20 @@ public class Fleet extends Ownable {
 	@Override
 	public void buyField(Player player) {
 			owner = player;
-			isowned = true;
 			owner.addBalance(-price);
+			isowned = true;
 			owner.addFleet();
 	}
 	@Override
 	public void landOnField(Player player) {
 		if (isowned == true) {
 			player.addBalance(-getRent());
-			owner.addBalance(getRent());
+			if (owner.getAlive() == true)
+				owner.addBalance(getRent());
 		}
 		else if (buyit){
 			buyField(player);
 			buyit = false;
-			player.addFleet();
 		}
 	}
 	

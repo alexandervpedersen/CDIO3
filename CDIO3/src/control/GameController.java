@@ -38,6 +38,12 @@ public class GameController {
 				GUIC.setOwner(player);
 			}
 		}
+		if (i==9 || i==14)
+			board.setBox(i, box.getSum());
+		if (i==4) {
+			if (GUIC.askTax())
+				board.buy(4);
+		}
 		if (board.isOwned(i) && board.getOwner(i)!=player && board.getOwner(i).getAlive())
 			GUIC.printTransaction1(board.getName(i), board.getOwner(i), player);
 		if (board.isOwned(i) && board.getOwner(i)!=player && board.getOwner(i).getAlive()==false)

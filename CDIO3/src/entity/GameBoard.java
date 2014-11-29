@@ -63,6 +63,12 @@ public class GameBoard {
 	public boolean isOwned(int fieldnumber) {
 		return board[fieldnumber].isOwned();
 	}
+	public void setBox(int fieldnumber, int boxvalue) {
+		if (fieldnumber ==9)
+			board[9].setBoxsum(boxvalue);
+		if (fieldnumber==14)
+			board[14].setBoxsum(boxvalue);
+	}
 	
 
 

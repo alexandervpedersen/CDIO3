@@ -27,4 +27,6 @@ public abstract class Field {
 	public Player getOwner() {
 		return null;
 	}
+	public void setBoxsum(int boxvalue) {
+	}
 }

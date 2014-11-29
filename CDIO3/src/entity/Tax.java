@@ -1,9 +1,9 @@
 package entity;
 
-import boundaryToMatador.GUI;
 
 public class Tax extends Field{
 	private int taxAmmount;
+	private boolean buyit;
 	
 	public Tax() {
 		super();
@@ -19,23 +19,16 @@ public class Tax extends Field{
 		this.taxAmmount = taxAmmount;
 	}
 	
-	public boolean isUserWilling(){
-		return GUI.getUserLeftButtonPressed("Vil du betale 10% af din pengebeholdning, eller 4000?", "10%", "4000");
-	}
-	
 	@Override
 	public void landOnField(Player player) {
-		if (getName()=="Goldmine"){
-					player.addBalance(-taxAmmount);
-		}
-		else {
-			if (isUserWilling()){
+			if (buyit){
 			int i = player.getBalance() / 10;
 			player.addBalance(-i);
-			}else
+			setBuy(false);
+			}
+			else
 			player.addBalance(-taxAmmount);
 			}
-		}
 		
 	@Override
 	public int getRent() {
@@ -45,7 +38,12 @@ public class Tax extends Field{
 	public String toString() {
 		return name+": Type[Tax] [taxAmmount=" + taxAmmount + "]";
 	}
-	
+	public boolean getBuy() {
+		return buyit;
+	}
+	public void setBuy(boolean buyit) {
+		this.buyit = buyit;
+	}
 	
 
 }

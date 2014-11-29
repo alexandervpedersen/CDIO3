@@ -20,6 +20,7 @@ public class Test_PayOwnedField { //Fejl i owned, da man bliver spurgt om køb 2 
 				
 			//Test
 				//Simulerer at spilleren lander på feltet 5.
+					gameboard.buy(5);
 					gameboard.landOnField(5, player1);
 			
 			//Postconditions
@@ -41,6 +42,7 @@ public class Test_PayOwnedField { //Fejl i owned, da man bliver spurgt om køb 2 
 				
 			//Test
 				//Simulerer at spilleren lander på feltet 5.
+					gameboard.buy(5);
 					gameboard.landOnField(5, player1);
 					gameboard.landOnField(5, player2);
 			

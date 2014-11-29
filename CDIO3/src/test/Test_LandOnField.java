@@ -35,6 +35,8 @@ public class Test_LandOnField {
 		
 	//Test
 		//Simulerer at spilleren lander på feltet 4.
+			// gameboarder 'køber' for at aktiverer 10% lejen fra feltet
+			gameboard.buy(4);
 			gameboard.landOnField(4, player);
 	
 	//Postconditions

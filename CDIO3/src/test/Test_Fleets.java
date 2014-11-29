@@ -1,5 +1,4 @@
 package test;
-import control.GameController;
 import entity.Fleet;
 import entity.Player;
 
@@ -12,9 +11,10 @@ public class Test_Fleets {
 	Fleet fleet2 = new Fleet("Fleet2", 4000);
 	Player player1 = new Player("Player1");
 	Player player2 = new Player("Player2");
-	GameController control = new GameController();
 	@Test
 	public void test() {
+		// Tests buy/rent for 2 fleet fields 
+		
 		// Tests the player accounts precondition
 		assertEquals(30000,player1.getBalance());
 		assertEquals(30000,player2.getBalance());

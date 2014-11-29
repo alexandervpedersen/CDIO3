@@ -11,7 +11,8 @@ public class Laborcamp extends Ownable {
 		super(name, price);
 	}
 	public int getRent(int boxsum) {
-		int rent = baserent * boxsum;
+		this.boxsum = boxsum;
+		int rent = baserent * this.boxsum;
 		return rent;
 	}
 	@Override

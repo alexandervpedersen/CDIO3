@@ -90,7 +90,7 @@ public class GameController {
 				runTurn(players[i]);
 				if (checkWinner(players)) {
 					run = false;
-					i = 100;
+					break;
 				}	
 				}
 			}
